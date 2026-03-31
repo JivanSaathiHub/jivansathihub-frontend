@@ -1,0 +1,83 @@
+.ap-page {
+  min-height: 100vh;
+  background: #F9FAFB;
+  font-family: var(--font-main);
+}
+
+/* ── Top bar ── */
+.ap-topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.ap-topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ap-back-btn {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  transition: opacity 0.2s;
+}
+
+.ap-back-btn:hover { opacity: 0.7; }
+
+/* ── Section ── */
+.ap-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.ap-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ap-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.ap-header p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ── Reuse card styles from FeaturedProfiles.css ── */
+/* profile-card, profile-photo, profile-img, etc. are already global via FeaturedProfiles.css */
+/* Just define the grid here */
+.ap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .ap-topbar  { top: 60px; }
+  .ap-section { padding: 24px 24px 80px; }
+  .ap-grid    { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .ap-topbar  { top: 60px; }
+  .ap-section { padding: 16px 16px 60px; }
+  .ap-grid    { grid-template-columns: 1fr; }
+}

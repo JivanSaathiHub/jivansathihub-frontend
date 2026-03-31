@@ -1,0 +1,1940 @@
+{
+  "nav": {
+    "home":             "Home",
+    "searchProfiles":   "Search Profiles",
+    "about":            "About",
+    "successStories":   "Success Stories",
+    "membershipPlans":  "Membership Plans",
+    "help":             "Help",
+    "login":            "Login",
+    "register":         "Register",
+    "registerFree":     "Register Free",
+    "logout":           "Logout",
+    "logoutConfirm":    "Are you sure you want to logout?",
+    "verified":         "✓ Verified",
+    "notVerified":      "Not Verified",
+    "backToApp":        "Back to App"
+  },
+  "menu": {
+    "dashboard":        "Dashboard",
+    "myProfile":        "My Profile",
+    "verification":     "Verification",
+    "kycSubtitle":      "Complete your KYC",
+    "interests":        "Interests",
+    "matches":          "Matches",
+    "messages":         "Messages",
+    "shortlisted":      "Shortlisted",
+    "settings":         "Settings"
+  },
+  "home": {
+    "heroTitle":        "Find Your Perfect Life Partner",
+    "heroSub":          "Join thousands of verified profiles and find your soulmate",
+    "searchBtn":        "Search Profiles",
+    "registerBtn":      "Register Free",
+    "featuredTitle":    "Featured Profiles",
+    "viewAll":          "View All Profiles",
+    "howItWorks":       "How It Works",
+    "whyChooseUs":      "Why Choose JeevanSaathiHub",
+    "successStories":   "Success Stories",
+    "membershipPlans":  "Membership Plans",
+    "trustedBy":        "Trusted by thousands of families"
+  },
+  "auth": {
+    "welcomeBack":      "Welcome Back",
+    "emailAddress":     "Email Address",
+    "password":         "Password",
+    "loginBtn":         "Login →",
+    "loggingIn":        "Logging in...",
+    "rememberMe":       "Remember me",
+    "forgotPassword":   "Forgot password?",
+    "noAccount":        "Don't have an account?",
+    "loginFailed":      "Login failed. Please try again.",
+    "emailRequired":    "Email is required.",
+    "validEmail":       "Enter a valid email.",
+    "passwordRequired": "Password is required."
+  },
+  "forgotPassword": {
+  "title": "Reset Password",
+  "titleSent": "Email Sent",
+  "description": "Enter your registered email and we'll send you a password reset link.",
+  "emailLabel": "Email Address",
+  "emailPlaceholder": "Enter your registered email",
+  "sendBtn": "Send Reset Link",
+  "sending": "Sending…",
+  "backToLogin": "Back to Login",
+  "rememberedPassword": "Remembered your password?",
+  "checkEmail": "Check your email",
+  "checkEmailDesc": "If this email is registered, you will receive a reset link valid for 15 minutes.",
+  "errors": {
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Enter a valid email.",
+    "general": "Something went wrong. Please try again."
+  }
+},
+"resetPassword": {
+  "title": "Set New Password",
+  "titleDone": "Password Reset!",
+  "newPassword": "New Password",
+  "newPasswordPlaceholder": "Enter new password",
+  "confirmPassword": "Confirm Password",
+  "confirmPasswordPlaceholder": "Confirm new password",
+  "resetBtn": "Reset Password",
+  "resetting": "Resetting…",
+  "loginNow": "Login Now",
+  "successTitle": "Password Updated!",
+  "successDesc": "Your password has been reset. You can now log in with your new password.",
+  "errors": {
+    "required": "Password is required.",
+    "minLength": "Password must be at least 6 characters.",
+    "noMatch": "Passwords do not match.",
+    "general": "Invalid or expired link."
+  }
+},
+  "register": {
+    "completeProfile":  "Complete Your Profile",
+    "stepOf":           "Step {{step}} of {{total}}",
+    "next":             "Next →",
+    "back":             "← Back",
+    "haveAccount":      "Have an account?",
+    "completeReg":      "✓ Complete Registration",
+    "creating":         "Creating Account…",
+    "welcome":          "Welcome to JeevanSaathiHub!",
+    "profileCreated":   "Your profile has been created successfully.",
+    "startFinding":     "Start finding your perfect match today.",
+    "goHome":           "Go to Home →"
+  },
+  "steps": {
+    "basicInfo":        "Basic Info",
+    "contact":          "Contact",
+    "personal":         "Personal",
+    "location":         "Location",
+    "family":           "Family",
+    "preferences":      "Preferences"
+  },
+  "profile": {
+    "aboutMe":          "About Me",
+    "basicDetails":     "Basic Details",
+    "contactDetails":   "Contact Details",
+    "professional":     "Professional Details",
+    "education":        "Education Details",
+    "family":           "Family Details",
+    "hobbies":          "Hobbies & Interests",
+    "photoGallery":     "Photo Gallery",
+    "editProfile":      "Edit Profile",
+    "verifyProfile":    "Verify Profile",
+    "age":              "Age",
+    "height":           "Height",
+    "weight":           "Weight",
+    "maritalStatus":    "Marital Status",
+    "motherTongue":     "Mother Tongue",
+    "religion":         "Religion",
+    "caste":            "Caste",
+    "email":            "Email",
+    "phone":            "Phone",
+    "location":         "Location",
+    "profession":       "Profession",
+    "company":          "Company",
+    "income":           "Annual Income",
+    "qualification":    "Highest Qualification",
+    "familyType":       "Family Type",
+    "familyValues":     "Family Values",
+    "siblings":         "Siblings",
+    "fatherOcc":        "Father's Occupation",
+    "motherOcc":        "Mother's Occupation",
+    "noDescription":    "No description added yet. Click Edit Profile to add one.",
+    "views":            "Views",
+    "interests":        "Interests",
+    "photos":           "Photos",
+    "addPhotos":        "Add Photos",
+    "uploading":        "Uploading…",
+    "main":             "Main",
+    "years":            "years",
+    "saveChanges":      "Save Changes",
+    "saving":           "Saving…",
+    "saved":            "Saved ✓",
+    "cancel":           "Cancel"
+  },
+   "search": {
+    "title": "Search Profiles",
+    "subtitle": "profiles matching your preferences",
+    "subtitleDefault": "Find your perfect life partner",
+    "filterProfiles": "Filter Profiles",
+    "lookingFor": "Looking for",
+    "bride": "Bride",
+    "groom": "Groom",
+    "ageFrom": "Age From",
+    "ageTo": "Age To",
+    "religion": "Religion",
+    "any": "Any",
+    "location": "Location",
+    "cityOrState": "City or State",
+    "education": "Education",
+    "applyFilters": "Apply Filters",
+    "searching": "Searching…",
+    "reset": "Reset",
+    "sortBy": "Sort by:",
+    "sortBestMatch": "Best Match",
+    "sortRecentlyActive": "Recently Active",
+    "sortAgeLowHigh": "Age: Low to High",
+    "sortAgeHighLow": "Age: High to Low",
+    "sortVerifiedFirst": "Verified First",
+    "sortNewest": "Newest Profiles",
+    "noProfiles": "No profiles found",
+    "tryAdjusting": "Try adjusting your filters to see more results.",
+    "loginBanner": "Login to search real profiles, send interests & connect with matches",
+    "loginToSearch": "Login to search profiles",
+    "loginToSendInterest": "Please login to send interest",
+    "sendInterestFailed": "Failed to send interest",
+    "loadFailed": "Failed to load profiles",
+    "match": "match",
+    "verified": "Verified",
+    "connected": "Connected",
+    "viewProfile": "View Profile",
+    "sendInterest": "Send Interest",
+    "interestSent": "Interest Sent",
+    "sendInterestTo": "Send Interest to",
+    "personalMsg": "Write a personal message (optional)...",
+    "send": "Send Interest",
+    "back": "← Back",
+    "showingProfiles": "Showing {{count}} profiles",
+    "previous": "Previous",
+    "nextPage": "Next",
+    "loginBtn": "Login",
+    "registerBtn": "Register",
+    "modalTitle": "Send Interest to {{name}}",
+    "modalDesc": "Write a personal message to {{firstName}} (optional)",
+    "modalPlaceholder": "Hi! I came across your profile and would love to connect…",
+    "modalSendBtn": "Send Interest",
+    "modalCancelBtn": "Cancel",
+    "errAgeFromRange": "Age must be between 18–59",
+    "errAgeToRange": "Age must be between 19–60",
+    "errAgeCompare": "Age To must be greater than Age From"
+  },
+  "dashboard": {
+    "welcomeBack":      "Welcome back, {{name}}!",
+    "profileComplete":  "Your profile is {{pct}}% complete.",
+    "completeForMore":  "Complete it to get better matches.",
+    "completeProfile":  "Complete Profile →",
+    "received":         "Received",
+    "sent":             "Sent",
+    "matches":          "Matches",
+    "messages":         "Messages",
+    "shortlisted":      "Shortlisted",
+    "profileViews":     "Profile Views",
+    "pendingInterests": "Pending Interests",
+    "viewAll":          "View All →",
+    "noPending":        "No pending interests",
+    "recentActivity":   "Recent Activity",
+    "noActivity":       "No recent activity yet",
+    "whoViewed":        "Who Viewed Your Profile",
+    "profileStrength":  "Profile Strength",
+    "excellent":        "Excellent",
+    "good":             "Good",
+    "fair":             "Fair",
+    "incomplete":       "Incomplete",
+    "basicAdded":       "Basic details added",
+    "photosUploaded":   "Photos uploaded",
+    "aboutWritten":     "Add more about yourself",
+    "profileVerified":  "Verify your profile",
+    "upgradePremium":   "Upgrade to Premium",
+    "getMore":          "Get 3x more responses with premium membership",
+    "viewPlans":        "View Plans",
+    "quickActions":     "Quick Actions",
+    "findMatches":      "Find Matches",
+    "viewMyProfile":    "View My Profile",
+    "verifyProfile":    "Verify Profile",
+    "loading":          "Loading your dashboard…"
+  },
+ "membership": {
+    "free": "Free Plan",
+    "premium": "Premium Plan",
+    "elite": "Elite Plan",
+    "upgrade": "Upgrade Now",
+    "current": "Current Plan",
+    "daysLeft": "{{days}} days left",
+    "expired": "Expired"
+  },
+  "verification": {
+    "title":            "Aadhaar eKYC Verification",
+    "subtitle":         "Instant verification with Aadhaar OTP",
+    "enterAadhaar":     "Enter Aadhaar Number",
+    "verifyDetails":    "Verify Details",
+    "uploadDocuments":  "Upload Documents",
+    "aadhaarNumber":    "Aadhaar Number",
+    "sendOtp":          "Send OTP to Verify",
+    "sending":          "Sending…",
+    "verifyOtp":        "Verify OTP",
+    "verifying":        "Verifying…",
+    "otpSentTo":        "OTP sent to your Aadhaar-linked mobile number.",
+    "resendIn":         "Resend OTP in {{secs}}s",
+    "resend":           "Resend OTP",
+    "confirm":          "Confirm & Continue",
+    "complete":         "Complete Verification",
+    "verified":         "Details Verified Successfully!",
+    "fetchedFrom":      "Your information has been fetched from UIDAI"
+  },
+  "common": {
+    "loading":          "Loading…",
+    "error":            "Something went wrong. Please try again.",
+    "retry":            "Retry",
+    "close":            "Close",
+    "save":             "Save",
+    "delete":           "Delete",
+    "cancel":           "Cancel",
+    "confirm":          "Confirm",
+    "yes":              "Yes",
+    "no":               "No",
+    "or":               "or",
+    "and":              "and",
+    "required":         "Required",
+    "optional":         "Optional",
+    "any":              "Any",
+    "select":           "Select…",
+    "notDisclosed":     "Not Disclosed",
+    "verified":         "✓ Verified",
+    "notVerified":      "Not Verified",
+    "years":            "years",
+    "previous":         "Previous",
+    "next":             "Next",
+    "showing":          "Showing"
+  },
+  "featured": {
+    "title": "Featured Profiles",
+    "subtitle": "Browse through verified profiles of potential matches",
+    "viewProfile": "View Profile",
+    "viewAll": "View All Profiles",
+    "badges": {
+      "premium": "Premium",
+      "new": "New",
+      "groom": "Groom"
+    }
+  },
+  "footer": {
+    "description": "Helping millions find their perfect life partner with trust, safety, and genuine connections.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "contactUs": "Contact Us",
+    "copyright": "© 2026 JeevanSaathiHub. All rights reserved. Made in India",
+
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "youtube": "YouTube"
+    },
+
+    "links": {
+      "home": "Home",
+      "searchProfiles": "Search Profiles",
+      "successStories": "Success Stories",
+      "membershipPlans": "Membership Plans",
+      "helpCenter": "Help Center",
+      "aboutUs": "About Us",
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "refundPolicy": "Refund Policy",
+      "cookiePolicy": "Cookie Policy"
+    },
+
+    "contact": {
+      "email": "support@jeevansaathihub.com",
+      "phone": "+91 1800-123-4567",
+      "location": "Mumbai, Maharashtra, India"
+    }
+  },
+  "hero": {
+    "title": "Find Your Perfect Life Partner",
+    "subtitle": "Trusted By Millions To Find Genuine Matches.",
+    "searchBtn": "Search Profiles",
+    "selectAge": "Select age",
+    "locationPlaceholder": "Enter Your Location",
+
+    "labels": {
+      "lookingFor": "Looking for",
+      "ageFrom": "Age From",
+      "ageTo": "Age To",
+      "religion": "Religion"
+    },
+
+    "options": {
+      "bride": "Bride",
+      "groom": "Groom",
+      "any": "Any",
+      "hindu": "Hindu",
+      "muslim": "Muslim",
+      "christian": "Christian",
+      "sikh": "Sikh",
+      "jain": "Jain"
+    },
+
+    "errors": {
+      "lookingFor": "Please select Bride or Groom.",
+      "ageFromRequired": "Select Age From.",
+      "ageFromRange": "Must be 18–59.",
+      "ageToRequired": "Select Age To.",
+      "ageToRange": "Must be 19–60.",
+      "ageCompare": "Age To must be greater than Age From."
+    }
+  },
+  "how": {
+    "title": "How It Works",
+    "subtitle": "Find your perfect match in 3 simple steps",
+
+    "steps": [
+      {
+        "title": "Create Your Profile",
+        "desc": "Sign up and build your profile with accurate details."
+      },
+      {
+        "title": "Search & Connect",
+        "desc": "Browse profiles and connect with suitable matches."
+      },
+      {
+        "title": "Start Your Journey",
+        "desc": "Begin your journey towards a happy married life."
+      }
+    ]
+  },
+  "lang": {
+    "change": "Change language"
+  },
+  "plans": {
+    "title": "Membership Plans",
+    "subtitle": "Choose the plan that suits best for you",
+    "mostPopular": "Most Popular",
+    "comingSoon": "Coming Soon",
+    "note": "All plans come with a 7-day money-back guarantee",
+
+    "list": [
+      {
+        "name": "Free",
+        "price": "{{price}}",
+        "period": "{{period}}",
+        "cta": "Get Started",
+        "features": [
+          "Create Profile",
+          "Browse Profiles",
+          "Limited Matches"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "{{price}}",
+        "period": "{{period}}",
+        "cta": "Upgrade Now",
+        "features": [
+          "Unlimited Matches",
+          "Send Messages",
+          "View Contact Details"
+        ]
+      },
+      {
+        "name": "Elite",
+        "price": "{{price}}",
+        "period": "{{period}}",
+        "cta": "Go Elite",
+        "features": [
+          "Personal Matchmaker",
+          "Priority Support",
+          "Profile Highlight"
+        ]
+      }
+    ]
+  },
+  "psm": {
+    "welcome": "Welcome!",
+    "title": "Choose Your Plan to Continue",
+    "subtitle": "Select a plan to access the app — you must choose before exploring",
+    "mostPopular": "Most Popular",
+    "comingSoon": "Coming Soon",
+    "note": "✦ Gold & Platinum plans launching soon — stay tuned!",
+
+    "plans": [
+      {
+        "name": "Free",
+        "desc": "Basic features to get started",
+        "price": "{{price}}",
+        "priceNote": "{{note}}",
+        "cta": "Get Started Free",
+        "features": [
+          "Create your profile",
+          "View limited profiles",
+          "Send up to 5 interests/day",
+          "Basic search filters",
+          "Limited chat messages"
+        ]
+      },
+      {
+        "name": "Gold",
+        "desc": "Most popular for serious seekers",
+        "price": "{{price}}",
+        "priceNote": "{{note}}",
+        "cta": "Coming Soon",
+        "features": [
+          "Unlimited profiles & interests",
+          "View phone numbers",
+          "Advanced filters",
+          "Priority support",
+          "Profile highlighted in search"
+        ]
+      },
+      {
+        "name": "Platinum",
+        "desc": "Premium with dedicated support",
+        "price": "{{price}}",
+        "priceNote": "{{note}}",
+        "cta": "Coming Soon",
+        "features": [
+          "Everything in Gold",
+          "Unlimited phone & email access",
+          "Dedicated relationship manager",
+          "Horoscope & background check",
+          "24/7 Priority support"
+        ]
+      }
+    ]
+  },
+  "register": {
+    "title": "Register Free in 3 Simple Steps",
+    "subtitle": "Start your journey to find your life partner",
+    "button": "Register Free Now",
+    "trust": "Join millions of users • 100% Free Registration • No hidden charges",
+    "steps": {
+      "createProfile": {
+        "title": "Create Your Profile",
+        "desc": "Complete our simple 6-step registration form with your basic details, education, profession, and preferences."
+      },
+      "browseMatches": {
+        "title": "Browse Matches",
+        "desc": "Get personalized match recommendations based on your preferences and start connecting."
+      },
+      "findPartner": {
+        "title": "Find Your Partner",
+        "desc": "Connect with verified profiles, communicate securely, and find your perfect life partner."
+      }
+    }
+  },
+  "stories": {
+    "title": "Success Real Love Stories That Inspire",
+    "subtitle": "Real couples, real connections — found on JeevanSathiHub💕"
+  },
+ "trust": {
+  "title": "Trust & Safety",
+  "subtitle": "Your security and privacy are our top priorities",
+  "points": [
+    { "title": "Verified Profiles",    "desc": "All profiles go through a rigorous verification process to ensure safety and authenticity." },
+    { "title": "Privacy Protection",   "desc": "Your personal information is completely protected with absolute data security." },
+    { "title": "Secure Communication", "desc": "Our chat is enabled with privacy controls and a secure messaging system." },
+    { "title": "Profile Screening",    "desc": "Our team manually reviews profiles to ensure match quality and authenticity." }
+  ],
+  "trustedTitle": "Trusted by Over 5 Million Users",
+  "trustedDesc": "JeevanSaathiHub has successfully helped thousands of people find their life partners. Our commitment to safety, privacy, and genuine connections makes us one of the most trusted matrimonial platforms."
+},
+  "admin": {
+    "loadingStats": "Loading stats…",
+    "error": "Error: {{msg}}",
+    "users": "Users",
+    "totalUsers": "Total Users",
+    "activeUsers": "Active Users",
+    "verified": "Verified",
+    "newToday": "New Today",
+    "newThisMonth": "New This Month",
+    "male": "Male",
+    "female": "Female",
+    "memberships": "Memberships",
+    "premiumUsers": "Premium Users",
+    "eliteUsers": "Elite Users",
+    "totalPaid": "Total Paid",
+    "revenue": "Revenue",
+    "totalRevenue": "Total Revenue",
+    "thisMonth": "This Month",
+    "interestsMatches": "Interests & Matches",
+    "totalInterests": "Total Interests",
+    "accepted": "Accepted",
+    "pending": "Pending",
+    "totalMatches": "Total Matches"
+  },
+  "adminInterests": {
+    "loading": "Loading…",
+    "error": "❌ {{msg}}",
+    "filters": {
+      "all": "All Status",
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "declined": "Declined"
+    },
+    "table": {
+      "from": "From",
+      "to": "To",
+      "status": "Status",
+      "message": "Message",
+      "date": "Date",
+      "actions": "Actions",
+      "deleteConfirm": "Delete this interest?",
+      "empty": "—"
+    },
+    "pagination": {
+      "prev": "← Prev",
+      "next": "Next →",
+      "pageOf": "Page {{page}} of {{totalPages}}"
+    },
+    "count": "Showing {{shown}} of {{total}} interests",
+    "buttons": {
+      "delete": "Delete"
+    }
+  },
+  "adminLayout": {
+    "admin": "Admin",
+    "superAdmin": "SuperAdmin",
+    "backToApp": "Back to App",
+    "logout": "Logout",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "memberships": "Memberships",
+      "interests": "Interests",
+      "roles": "Role Management"
+    },
+    "accessDenied": "Access Denied",
+    "accessDeniedMessage": "You do not have permission to access the Admin Panel.",
+    "backButton": "Go Back",
+    "roles": {
+      "title": "Role Management",
+      "description": "Promote users to Admin or demote Admins to User. Only SuperAdmin can access this.",
+      "warning": "⚠ Use the Users tab → find a user → change their role from the user detail actions. Role changes take effect immediately."
+    }
+  },
+  "adminLogin": {
+    "admin": "Admin",
+    "sub": "Restricted access — authorized personnel only",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "emailPlaceholder": "admin@jeevansaathihub.com",
+    "passwordPlaceholder": "Enter your password",
+    "loginBtn": "Login to Admin Panel",
+    "loggingIn": "Logging in…",
+    "backToSite": "Back to main site",
+    "errors": {
+      "bothRequired": "Both fields are required.",
+      "accessDenied": "Access denied. Admin privileges required.",
+      "invalidCredentials": "Invalid email or password."
+    }
+  },
+  "adminMemberships": {
+    "filters": {
+      "allPlans": "All Plans",
+      "premium": "Premium",
+      "elite": "Elite",
+      "allStatus": "All Status",
+      "active": "Active",
+      "cancelled": "Cancelled"
+    },
+    "count": "Showing {shown} of {total} memberships",
+    "actions": {
+      "upgrade": "Upgrade",
+      "cancel": "Cancel"
+    },
+    "prompts": {
+      "upgradePlan": "Upgrade {name} to which plan?\nType: premium or elite",
+      "upgradeDays": "How many days? (Leave blank for default)",
+      "cancelConfirm": "Cancel {name}'s membership?"
+    },
+    "loading": "Loading…",
+    "error": "❌ {error}"
+  },
+  "adminUsers": {
+    "filters": {
+      "search": "Search by name, email or mobile…",
+      "allGenders": "All Genders",
+      "male": "Male",
+      "female": "Female",
+      "allPlans": "All Plans",
+      "free": "Free",
+      "premium": "Premium",
+      "elite": "Elite",
+      "allVerified": "All",
+      "verified": "Verified",
+      "unverified": "Unverified",
+      "allStatus": "All Status",
+      "active": "Active",
+      "blocked": "Blocked"
+    },
+    "count": "Showing {shown} of {total} users",
+    "status": {
+      "active": "Active",
+      "blocked": "Blocked"
+    },
+    "roles": {
+      "admin": "Admin",
+      "user": "User",
+      "superadmin": "SuperAdmin",
+      "makeAdmin": "Make Admin",
+      "removeAdmin": "Remove Admin"
+    },
+    "actions": {
+      "block": "Block",
+      "unblock": "Unblock",
+      "delete": "Delete"
+    },
+    "prompts": {
+      "blockUser": "Block this user?",
+      "unblockUser": "Unblock this user?",
+      "deleteUser": "Permanently delete this user and all their data?",
+      "changeRole": "Change this user's role to {role}?"
+    },
+    "loading": "Loading…",
+    "error": "❌ {error}"
+  },
+  "table": {
+  "name": "Name",
+  "email": "Email",
+  "gender": "Gender",
+  "age": "Age",
+  "city": "City",
+  "plan": "Plan",
+  "verified": "Verified",
+  "status": "Status",
+  "role": "Role",
+  "actions": "Actions"
+},
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "We are India's most trusted matrimonial platform, dedicated to helping millions find their perfect life partner with trust, authenticity, and cultural respect."
+    },
+
+    "stats": {
+      "users": "Registered Users",
+      "success": "Success Stories",
+      "countries": "Countries",
+      "support": "Support"
+    },
+
+    "story": {
+      "title": "Our Story",
+      "p1": "Founded in 2010, our matrimonial platform was born from a simple yet powerful vision: to help people find their life partners in a safe, authentic, and culturally respectful environment.",
+      "p2": "What started as a small community initiative has grown into one of India's largest and most trusted matrimonial services, connecting millions of hearts across the globe.",
+      "p3": "Today, we continue to evolve with advanced matchmaking algorithms, stringent verification processes, and personalised support to ensure every member finds their perfect match."
+    },
+
+    "mission": {
+      "title": "Our Mission",
+      "text": "To create meaningful and lasting relationships by providing a trusted, secure, and culturally sensitive platform that respects traditions while embracing modern matchmaking technology."
+    },
+
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the world's most trusted matrimonial platform, where every individual finds their perfect life partner in a safe, authentic, and joyful journey."
+    },
+
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide everything we do",
+
+      "trust": {
+        "title": "Trust & Authenticity",
+        "desc": "We verify every profile to ensure genuine connections, maintaining the highest standards of authenticity."
+      },
+      "privacy": {
+        "title": "Privacy & Security",
+        "desc": "Your data is protected with strong encryption. We never share your information without consent."
+      },
+      "community": {
+        "title": "Diverse Community",
+        "desc": "We celebrate diversity and welcome all communities, religions, and cultures."
+      },
+      "service": {
+        "title": "Excellence in Service",
+        "desc": "Dedicated support and personalized matchmaking to help you find your perfect partner."
+      }
+    },
+
+    "team": {
+      "title": "Our Leadership Team",
+      "subtitle": "Meet the passionate individuals driving our mission forward",
+
+      "rajesh": {
+        "name": "Rajesh Sharma",
+        "role": "Founder & CEO",
+        "desc": "Visionary leader with 10+ years in matrimonial services."
+      },
+      "priya": {
+        "name": "Priya Patel",
+        "role": "Head of Matchmaking",
+        "desc": "Expert in relationship counseling and compatibility."
+      },
+      "vikram": {
+        "name": "Vikram Singh",
+        "role": "Chief Technology Officer",
+        "desc": "Tech innovator ensuring platform security and efficiency."
+      }
+    },
+
+    "why": {
+      "title": "Why Choose Us?",
+      "1": "Verified profiles with stringent background checks",
+      "2": "Advanced AI-powered matchmaking algorithms",
+      "3": "Complete privacy and data security",
+      "4": "Dedicated relationship managers for premium members",
+      "5": "24/7 customer support in multiple languages",
+      "6": "Success-focused approach with personalized recommendations",
+      "7": "Free registration with premium upgrade options",
+      "8": "Mobile app for convenient matchmaking on the go"
+    },
+
+    "cta": {
+      "title": "Have Questions?",
+      "subtitle": "Our dedicated support team is here to help you find your perfect match.",
+      "contact": "Contact Support",
+      "faq": "View FAQs"
+    }
+  },
+  "profiles": {
+    "back": "Back to Profiles",
+    "title": "All Profiles",
+    "subtitle": "Browse through all verified profiles of potential matches",
+    "view": "View Profile",
+
+    "badge": {
+      "premium": "Premium",
+      "new": "New",
+      "groom": "Groom"
+    }
+  },
+  "dashboard": {
+    "default_user": "User",
+    "welcome_back": "Welcome back, {{name}}!",
+    "profile_complete": "Your profile is {{strength}}% complete.",
+    "profile_incomplete_suggestion": "Complete it to get better matches.",
+    "complete_profile_button": "Complete Profile →",
+    "stats": {
+      "received": "Received",
+      "sent": "Sent",
+      "matches": "Matches",
+      "messages": "Messages",
+      "shortlisted": "Shortlisted",
+      "profile_views": "Profile Views"
+    },
+    "pending_interests_title": "Pending Interests ({{count}})",
+    "view_all": "View All →",
+    "no_pending_interests": "No pending interests",
+    "recent_activity_title": "Recent Activity",
+    "no_recent_activity": "No recent activity yet",
+    "who_viewed_title": "Who Viewed Your Profile",
+    "profile_strength_title": "Profile Strength",
+    "strength_excellent": "Excellent",
+    "strength_good": "Good",
+    "strength_fair": "Fair",
+    "strength_incomplete": "Incomplete",
+    "checklist": {
+      "basic_details": "Basic details added",
+      "photos_uploaded": "Photos uploaded",
+      "about_me_written": "About me written",
+      "profile_verified": "Profile verified"
+    },
+    "upgrade_premium_title": "Upgrade to Premium",
+    "upgrade_premium_sub": "Get 3x more responses with premium membership",
+    "upgrade_premium_button": "View Plans",
+    "quick_actions_title": "Quick Actions",
+    "quick_find_matches": "Find Matches",
+    "quick_view_profile": "View My Profile",
+    "quick_verify_profile": "Verify Profile",
+    "loading": "Loading your dashboard…"
+  },
+  "interest": {
+  "accept":       "Accept",
+  "decline":      "Decline",
+  "view_profile": "View Profile",
+  "years_short":  "yrs"
+},
+"interests": {
+  "title":           "Interests",
+  "subtitle":        "Manage your interests received and sent",
+  "accept":          "Accept",
+  "decline":         "Decline",
+  "viewProfile":     "View Profile",
+  "message":         "Message",
+  "accepted":        "Accepted",
+  "declined":        "Declined",
+  "received":        "Received",
+  "sentLabel":       "Sent",
+  "awaiting":        "Awaiting Response",
+  "shortlist":       "Shortlist",
+  "removeShortlist": "Remove from Shortlist",
+  "empty":           "No {{tab}} interests yet.",
+  "tab": {
+    "pending":  "Received",
+    "accepted": "Accepted",
+    "declined": "Declined",
+    "sent":"Sent"
+  },
+  "filter": {
+    "all":   "All Time",
+    "today": "Today",
+    "week":  "This Week",
+    "month": "This Month"
+  }
+},
+"activity": {
+  "sent_interest":  "{{name}} sent you an interest",
+  "viewed_profile": "{{name}} viewed your profile"
+},
+"time": {
+  "just_now":  "just now",
+  "min_ago":   "{{count}} min ago",
+  "hours_ago": "{{count}} hours ago",
+  "days_ago":  "{{count}} days ago"
+},
+"badge": {
+  "new": "New"
+},
+  "dashboard": {
+    "default_user": "User",
+    "welcome_back": "Welcome back, {{name}}!",
+    "profile_complete": "Your profile is {{strength}}% complete.",
+    "profile_incomplete_suggestion": "Complete it to get better matches.",
+    "complete_profile_button": "Complete Profile →",
+    "stats": {
+      "received": "Received",
+      "sent": "Sent",
+      "matches": "Matches",
+      "messages": "Messages",
+      "shortlisted": "Shortlisted",
+      "profile_views": "Profile Views"
+    },
+    "pending_interests_title": "Pending Interests ({{count}})",
+    "view_all": "View All →",
+    "no_pending_interests": "No pending interests",
+    "recent_activity_title": "Recent Activity",
+    "no_recent_activity": "No recent activity yet",
+    "who_viewed_title": "Who Viewed Your Profile",
+    "profile_strength_title": "Profile Strength",
+    "strength_excellent": "Excellent",
+    "strength_good": "Good",
+    "strength_fair": "Fair",
+    "strength_incomplete": "Incomplete",
+    "checklist": {
+      "basic_details": "Basic details added",
+      "photos_uploaded": "Photos uploaded",
+      "about_me_written": "About me written",
+      "profile_verified": "Profile verified"
+    },
+    "upgrade_premium_title": "Upgrade to Premium",
+    "upgrade_premium_sub": "Get 3x more responses with premium membership",
+    "upgrade_premium_button": "View Plans",
+    "quick_actions_title": "Quick Actions",
+    "quick_find_matches": "Find Matches",
+    "quick_view_profile": "View My Profile",
+    "quick_verify_profile": "Verify Profile",
+    "loading": "Loading your dashboard…"
+  },
+  "interest": {
+    "accept": "Accept",
+    "decline": "Decline",
+    "view_profile": "View Profile",
+    "years_short": "yrs"
+  },
+  "activity": {
+    "sent_interest": "{{name}} sent you an interest",
+    "viewed_profile": "{{name}} viewed your profile"
+  },
+  "time": {
+    "just_now": "just now",
+    "min_ago": "{{count}} min ago",
+    "hours_ago": "{{count}} hours ago",
+    "days_ago": "{{count}} days ago"
+  },
+  "badge": {
+    "new": "New"
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Your trusted companion for meaningful relationships"
+    },
+    "stats": {
+      "users": "Active Users",
+      "success": "Success Stories",
+      "countries": "Countries",
+      "support": "Support"
+    },
+    "story": {
+      "title": "Our Story",
+      "p1": "Founded in 2015, we started with a simple idea – finding a life partner should be a joyful experience, not a stressful one.",
+      "p2": "What began as a small initiative has now grown into a global community of over 1 crore members. Our approach combines technology with a personal touch.",
+      "p3": "We believe in algorithms but also in human intuition."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To provide a safe and inclusive platform for individuals to find their ideal life partner."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To create a world where technology helps every heart find its destination."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide our work",
+      "trust": {
+        "title": "Trust",
+        "desc": "We believe in honesty and transparency."
+      },
+      "privacy": {
+        "title": "Privacy",
+        "desc": "Keeping your data secure and private is our top priority."
+      },
+      "community": {
+        "title": "Community",
+        "desc": "A respectful and supportive environment where everyone can see themselves reflected."
+      },
+      "service": {
+        "title": "Service",
+        "desc": "24/7 dedicated support to meet your needs."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "The people bringing this dream to life",
+      "rajesh": {
+        "name": "Rajesh Sharma",
+        "role": "Founder & CEO",
+        "desc": "Former software engineer with 10+ years of experience."
+      },
+      "priya": {
+        "name": "Priya Mehta",
+        "role": "CTO",
+        "desc": "AI and machine learning expert, ensuring a seamless user experience."
+      },
+      "vikram": {
+        "name": "Vikram Singh",
+        "role": "CXO",
+        "desc": "Psychologist and relationship expert, the voice of our customers."
+      }
+    },
+    "why": {
+      "title": "Why Choose Us?",
+      "1": "Personalized matching algorithm",
+      "2": "Verified profiles",
+      "3": "Privacy-first approach",
+      "4": "24/7 customer support",
+      "5": "Free sign up",
+      "6": "Active community",
+      "7": "High success rate",
+      "8": "Secure messaging"
+    },
+    "cta": {
+      "title": "Ready to start your journey?",
+      "subtitle": "Join today and meet your dream partner.",
+      "contact": "Contact Us",
+      "faq": "FAQ"
+    }
+  },
+  "editProfile": {
+    "title": "Edit Profile",
+    "subtitle": "Changes are saved to your profile immediately.",
+    "cancel": "Cancel",
+    "saving": "Saving…",
+    "saved": "Saved ✓",
+    "saveChanges": "Save Changes",
+    "select": "Select…",
+    "saveError": "Failed to save. Please try again.",
+    "sections": {
+      "about": "About Me",
+      "basic": "Basic Details",
+      "location": "Location Details",
+      "professional": "Professional Details",
+      "education": "Education Details",
+      "family": "Family Details"
+    },
+    "fields": {
+      "aboutMe": "About Me",
+      "fullName": "Full Name",
+      "height": "Height",
+      "weight": "Weight",
+      "maritalStatus": "Marital Status",
+      "motherTongue": "Mother Tongue",
+      "religion": "Religion",
+      "caste": "Caste / Community",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "profession": "Profession",
+      "employer": "Employer / Company",
+      "annualIncome": "Annual Income",
+      "education": "Highest Qualification",
+      "familyType": "Family Type",
+      "familyValues": "Family Values",
+      "siblings": "Siblings",
+      "fatherOccupation": "Father's Occupation",
+      "motherOccupation": "Mother's Occupation"
+    },
+    "placeholders": {
+      "aboutMe": "Tell people about yourself…",
+      "fullName": "Full name",
+      "caste": "Enter caste / community",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "profession": "Your profession",
+      "employer": "Company name"
+    },
+    "maritalStatus": {
+      "Never_Married": "Never Married",
+      "Divorced": "Divorced",
+      "Widowed": "Widowed",
+      "Separated": "Separated"
+    },
+    "motherTongue": {
+      "Hindi": "Hindi",
+      "Tamil": "Tamil",
+      "Telugu": "Telugu",
+      "Kannada": "Kannada",
+      "Malayalam": "Malayalam",
+      "Bengali": "Bengali",
+      "Marathi": "Marathi",
+      "Gujarati": "Gujarati",
+      "Punjabi": "Punjabi",
+      "Odia": "Odia",
+      "Urdu": "Urdu",
+      "Assamese": "Assamese",
+      "Maithili": "Maithili",
+      "Santali": "Santali",
+      "Kashmiri": "Kashmiri",
+      "Sindhi": "Sindhi",
+      "Konkani": "Konkani",
+      "Manipuri": "Manipuri",
+      "Dogri": "Dogri",
+      "Bodo": "Bodo",
+      "Other": "Other"
+    },
+    "religion": {
+      "Hindu": "Hindu",
+      "Muslim": "Muslim",
+      "Christian": "Christian",
+      "Sikh": "Sikh",
+      "Jain": "Jain",
+      "Buddhist": "Buddhist",
+      "Parsi___Zoroastrian": "Parsi / Zoroastrian",
+      "Jewish": "Jewish",
+      "No_Religion": "No Religion",
+      "Other": "Other"
+    },
+    "annualIncome": {
+      "Below___1_Lakh": "Below ₹1 Lakh",
+      "__1_2_Lakhs": "₹1–2 Lakhs",
+      "__2_3_Lakhs": "₹2–3 Lakhs",
+      "__3_5_Lakhs": "₹3–5 Lakhs",
+      "__5_7_Lakhs": "₹5–7 Lakhs",
+      "__7_10_Lakhs": "₹7–10 Lakhs",
+      "__10_15_Lakhs": "₹10–15 Lakhs",
+      "__15_20_Lakhs": "₹15–20 Lakhs",
+      "__20_30_Lakhs": "₹20–30 Lakhs",
+      "__30_50_Lakhs": "₹30–50 Lakhs",
+      "__50_75_Lakhs": "₹50–75 Lakhs",
+      "__75_Lakhs___1_Crore": "₹75 Lakhs – 1 Crore",
+      "Above___1_Crore": "Above ₹1 Crore",
+      "Not_Disclosed": "Not Disclosed"
+    },
+    "familyType": {
+      "Nuclear_Family": "Nuclear Family",
+      "Joint_Family": "Joint Family",
+      "Extended_Family": "Extended Family"
+    },
+    "familyValues": {
+      "Traditional": "Traditional",
+      "Moderate": "Moderate",
+      "Liberal": "Liberal"
+    },
+    "fatherOccupation": {
+      "Business___Self_Employed": "Business / Self Employed",
+      "Government_Employee": "Government Employee",
+      "Private_Sector_Employee": "Private Sector Employee",
+      "Doctor": "Doctor",
+      "Engineer": "Engineer",
+      "Lawyer": "Lawyer",
+      "Teacher___Professor": "Teacher / Professor",
+      "Farmer": "Farmer",
+      "Army___Defence": "Army / Defence",
+      "Police": "Police",
+      "Banker": "Banker",
+      "Accountant": "Accountant",
+      "Architect": "Architect",
+      "Scientist": "Scientist",
+      "Politician": "Politician",
+      "Retired": "Retired",
+      "Passed_Away": "Passed Away",
+      "Not_Employed": "Not Employed",
+      "Other": "Other"
+    },
+    "motherOccupation": {
+      "Homemaker": "Homemaker",
+      "Business___Self_Employed": "Business / Self Employed",
+      "Government_Employee": "Government Employee",
+      "Private_Sector_Employee": "Private Sector Employee",
+      "Doctor": "Doctor",
+      "Engineer": "Engineer",
+      "Lawyer": "Lawyer",
+      "Teacher___Professor": "Teacher / Professor",
+      "Banker": "Banker",
+      "Accountant": "Accountant",
+      "Nurse": "Nurse",
+      "Army___Defence": "Army / Defence",
+      "Retired": "Retired",
+      "Passed_Away": "Passed Away",
+      "Not_Employed": "Not Employed",
+      "Other": "Other"
+    },
+    "siblings": {
+      "noSiblings": "No Siblings"
+    },
+    "education": {
+      "10th___SSC": "10th / SSC",
+      "12th___HSC___Diploma": "12th / HSC / Diploma",
+      "B_A___Bachelor_of_Arts_": "B.A. (Bachelor of Arts)",
+      "B_Sc___Bachelor_of_Science_": "B.Sc. (Bachelor of Science)",
+      "B_Com___Bachelor_of_Commerce_": "B.Com. (Bachelor of Commerce)",
+      "B_Tech___B_E___Engineering_": "B.Tech / B.E. (Engineering)",
+      "B_Arch___Architecture_": "B.Arch. (Architecture)",
+      "B_Pharm___Pharmacy_": "B.Pharm. (Pharmacy)",
+      "B_Sc_Nursing": "B.Sc. Nursing",
+      "BBA___Business_Administration_": "BBA (Business Administration)",
+      "BCA___Computer_Applications_": "BCA (Computer Applications)",
+      "B_Ed___Education_": "B.Ed. (Education)",
+      "LLB___Law_": "LLB (Law)",
+      "MBBS___Medicine_": "MBBS (Medicine)",
+      "BDS___Dental_Surgery_": "BDS (Dental Surgery)",
+      "BAMS___Ayurvedic_Medicine_": "BAMS (Ayurvedic Medicine)",
+      "BHMS___Homeopathy_": "BHMS (Homeopathy)",
+      "B_Des___Design_": "B.Des. (Design)",
+      "B_Sc_Agriculture": "B.Sc. Agriculture",
+      "B_Voc___Vocational_": "B.Voc. (Vocational)",
+      "M_A___Master_of_Arts_": "M.A. (Master of Arts)",
+      "M_Sc___Master_of_Science_": "M.Sc. (Master of Science)",
+      "M_Com___Master_of_Commerce_": "M.Com. (Master of Commerce)",
+      "M_Tech___M_E___Engineering_": "M.Tech / M.E. (Engineering)",
+      "M_Arch___Architecture_": "M.Arch. (Architecture)",
+      "MBA___Business_Administration_": "MBA (Business Administration)",
+      "MCA___Computer_Applications_": "MCA (Computer Applications)",
+      "M_Ed___Education_": "M.Ed. (Education)",
+      "LLM___Master_of_Law_": "LLM (Master of Law)",
+      "MD___MS___Medical_": "MD / MS (Medical)",
+      "MDS___Dental_Surgery_": "MDS (Dental Surgery)",
+      "M_Pharm___Pharmacy_": "M.Pharm. (Pharmacy)",
+      "M_Des___Design_": "M.Des. (Design)",
+      "CA___Chartered_Accountant_": "CA (Chartered Accountant)",
+      "CS___Company_Secretary_": "CS (Company Secretary)",
+      "CMA___ICWA": "CMA / ICWA",
+      "CFA___Chartered_Financial_Analyst_": "CFA (Chartered Financial Analyst)",
+      "CFP___Financial_Planner_": "CFP (Financial Planner)",
+      "ACCA": "ACCA",
+      "PhD___Doctorate": "PhD / Doctorate",
+      "Post_Doctoral": "Post Doctoral",
+      "ITI___Trade_Certificate": "ITI / Trade Certificate",
+      "Polytechnic_Diploma": "Polytechnic Diploma",
+      "Other": "Other"
+    }
+  },
+  "help": {
+    "hero": {
+      "badge": "Help Centre",
+      "title1": "How can we",
+      "titleAccent": "help you",
+      "title2": "today?",
+      "subtitle": "Search our knowledge base or browse categories below.",
+      "searchPlaceholder": "Search for answers… e.g. 'reset password', 'refund'"
+    },
+    "search": {
+      "resultsFound": "{{count}} result for \"{{query}}\"",
+      "resultsFound_plural": "{{count}} results for \"{{query}}\"",
+      "noResults": "No results for \"{{query}}\"",
+      "tryDifferent": "Try different keywords, or",
+      "browseAll": "browse all categories"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Browse by topic to find what you need.",
+      "categories": {
+        "account": "Account & Profile",
+        "search": "Searching & Matching",
+        "connect": "Connecting with Members",
+        "membership": "Membership & Payments",
+        "safety": "Privacy & Safety"
+      },
+      "account": {
+        "q1": "How do I create an account on JeevanSaathiHub?",
+        "a1": "Click the 'Register' button on the top right. Fill in your basic details, verify your mobile number via OTP, and complete your profile with photos and preferences. The entire process takes about 5–10 minutes.",
+        "q2": "Can I edit my profile after registration?",
+        "a2": "Yes! Go to My Profile → Edit Profile at any time. You can update photos, personal details, partner preferences, and lifestyle information whenever you like.",
+        "q3": "How do I upload or change my profile photo?",
+        "a3": "Navigate to My Profile → Photos. Click 'Add Photos' to upload from your device. You can upload up to 10 photos. Your primary photo is what other members see in search results.",
+        "q4": "What should I do if I forget my password?",
+        "a4": "Click 'Login' then 'Forgot Password'. Enter your registered email or mobile number and we'll send you a reset link or OTP within a few seconds.",
+        "q5": "How do I delete my account?",
+        "a5": "Go to Settings → Privacy → Delete Account. Please note this action is permanent and removes all your data. We recommend hiding your profile first if you only need a temporary break."
+      },
+      "search": {
+        "q1": "How does the profile matching work?",
+        "a1": "Our algorithm considers your partner preferences (age, religion, caste, education, location, lifestyle) and scores profiles by compatibility. The more complete your profile, the better your matches.",
+        "q2": "Can I search profiles without registering?",
+        "a2": "You can browse limited profile previews without registration. To view full profiles, contact details, or send interests you need a registered (free or premium) account.",
+        "q3": "How do I filter search results?",
+        "a3": "Use the Advanced Search panel to filter by age range, height, religion, mother tongue, education, profession, income, location, and more. Filters can be saved for quick future searches.",
+        "q4": "What is 'Daily Recommendations'?",
+        "a4": "Every day we curate a fresh set of highly compatible profiles just for you, based on your preferences and activity. Check your dashboard each morning for new suggestions."
+      },
+      "connect": {
+        "q1": "How do I send an Interest to someone?",
+        "a1": "Open the profile you like and click 'Send Interest'. The member will be notified and can Accept or Decline. If they accept, you can start a conversation.",
+        "q2": "How does messaging work?",
+        "a2": "Once an interest is mutually accepted, both members can exchange messages through our secure in-app chat. Phone numbers and emails are only shared when both sides choose to share them.",
+        "q3": "Can I see who viewed my profile?",
+        "a3": "Yes. Go to My Activity → Profile Visitors to see members who recently viewed your profile. Premium members can see the full visitor list; free members see a limited count.",
+        "q4": "What does 'Shortlist' mean?",
+        "a4": "Shortlisting saves a profile to your private list so you can revisit it later. The other member is not notified when you shortlist them."
+      },
+      "membership": {
+        "q1": "What is included in the free membership?",
+        "a1": "Free members can register, build a profile, view limited profile details, send up to 5 interests per day, and receive interests from others.",
+        "q2": "What extra features do premium plans offer?",
+        "a2": "Premium members get unlimited messaging, full contact detail access, advanced filters, highlighted profiles in search results, profile boost credits, and priority customer support.",
+        "q3": "What payment methods are accepted?",
+        "a3": "We accept UPI, Net Banking, Credit/Debit Cards (Visa, Mastercard, RuPay), and popular wallets like Paytm and PhonePe. All transactions are secured by 256-bit SSL encryption.",
+        "q4": "Can I get a refund if I'm not satisfied?",
+        "a4": "We offer a 7-day refund policy for new premium subscriptions if you have not used any premium features. Contact support within 7 days of purchase with your order ID.",
+        "q5": "How do I cancel my subscription auto-renewal?",
+        "a5": "Go to Settings → Subscription → Manage Plan → Cancel Auto-Renewal. Your premium access continues until the current billing period ends."
+      },
+      "safety": {
+        "q1": "Is my personal information safe?",
+        "a1": "Absolutely. We never sell your data to third parties. Your contact details are hidden by default and only revealed when you choose to share them. We are fully DPDP Act compliant.",
+        "q2": "How do I block or report a member?",
+        "a2": "Open the member's profile, tap the three-dot menu (⋮) and choose 'Block' or 'Report'. Blocked members cannot view your profile or message you. Our safety team reviews all reports within 24 hours.",
+        "q3": "How can I hide my profile temporarily?",
+        "a3": "Go to Settings → Privacy → Profile Visibility and toggle 'Hide Profile'. Your profile won't appear in searches, but existing conversations remain active.",
+        "q4": "Are the profiles verified?",
+        "a4": "We offer ID verification, mobile verification, and photo verification badges. Look for the blue ✓ Verified badge on profiles. Verification significantly increases trust and match quality."
+      }
+    },
+    "quickLinks": {
+      "title": "Popular Topics",
+      "resetPassword": "Reset Password",
+      "uploadPhotos": "Upload Photos",
+      "upgradePremium": "Upgrade to Premium",
+      "verifyProfile": "Verify My Profile",
+      "blockMember": "Block a Member",
+      "requestRefund": "Request a Refund",
+      "downloadApp": "Download the App",
+      "changeLanguage": "Change Language"
+    },
+    "contact": {
+      "title": "Still need help?",
+      "subtitle": "Our support team is always here for you.",
+      "chat": {
+        "title": "Live Chat",
+        "desc": "Chat with our support team in real time.",
+        "detail": "Available Mon–Sat, 9 AM – 8 PM IST",
+        "action": "Start Chat"
+      },
+      "email": {
+        "title": "Email Support",
+        "desc": "Send us a detailed query and we'll reply within 24 hours.",
+        "detail": "support@jeevanSaathiHub.com",
+        "action": "Send Email"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "desc": "Speak directly to a relationship manager.",
+        "detail": "+91 98765 43210  |  Mon–Fri, 10 AM – 6 PM",
+        "action": "Call Now"
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Describe your issue in detail and our team will get back to you within 24 hours.",
+      "promise1": "✅ Replies within 24 hours",
+      "promise2": "✅ Dedicated relationship managers",
+      "promise3": "✅ Available in English & Hindi",
+      "promise4": "✅ Strict data privacy",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter Your Name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "yourmail@gmail.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Select a topic…",
+      "subjectAccount": "Account / Profile Issues",
+      "subjectPayment": "Payment / Refund",
+      "subjectMatch": "Matching / Search",
+      "subjectSafety": "Safety / Report",
+      "subjectOther": "Other",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Please describe your issue in as much detail as possible…",
+      "submitButton": "Send Message →",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you! We'll respond to {{email}} within 24 hours.",
+      "sendAnother": "Send Another"
+    },
+    "footer": {
+      "copyright": "© 2025 JeevanSaathiHub. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "sitemap": "Sitemap"
+    }
+  },
+  "interests": {
+    "title": "Interests Received",
+    "subtitle": "Manage interests received from other members",
+    "tab": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "declined": "Declined"
+    },
+    "filter": {
+      "all": "All Interests",
+      "today": "Received Today",
+      "week": "This Week",
+      "month": "This Month"
+    },
+    "accept": "Accept",
+    "decline": "Decline",
+    "viewProfile": "View Profile",
+    "message": "Message",
+    "shortlist": "Shortlist",
+    "removeShortlist": "Remove from shortlist",
+    "accepted": "Accepted",
+    "declined": "Declined",
+    "received": "Received",
+    "empty": "No {{tab}} interests"
+  },
+  "login": {
+    "title": "💑 Welcome Back",
+    "close": "Close",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Login →",
+    "loggingIn": "Logging in...",
+    "noAccount": "Don't have an account?",
+    "registerFree": "Register Free",
+    "errors": {
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Enter a valid email.",
+      "passwordRequired": "Password is required.",
+      "general": "Login failed. Please try again."
+    }
+  },
+  "matches": {
+    "title": "Your Matches",
+    "subtitle": "Members who have mutually accepted interests with you",
+    "activeMatchesCount": "{{count}} Active Match",
+    "activeMatchesCount_plural": "{{count}} Active Matches",
+    "activeMatchesSub": "You have {{count}} mutual connection. Start chatting now!",
+    "activeMatchesSub_plural": "You have {{count}} mutual connections. Start chatting now!",
+    "unlockFeaturesTitle": "Unlock More Features",
+    "unlockFeaturesSub": "Upgrade to premium to view contact details, send unlimited messages, and more!",
+    "upgradeButton": "Upgrade Now",
+    "verifiedBadge": "Verified",
+    "match": "Match",
+    "matchedAgo": "Matched {{time}}",
+    "mutualInterestsLabel": "Mutual Interests:",
+    "sendMessage": "Send Message",
+    "viewFullProfile": "View Full Profile"
+  },
+  "messages": {
+    "searchPlaceholder": "Search conversations...",
+    "noConversations": "No conversations found",
+    "tabs": {
+      "all": "All",
+      "unread": "Unread",
+      "favourites": "Favourites",
+      "connections": "Connections"
+    },
+    "back": "Back",
+    "blocked": "Blocked",
+    "typing": "typing…",
+    "online": "Online",
+    "offline": "Offline",
+    "call": "Call",
+    "viewProfile": "View Profile",
+    "more": "More",
+    "sendImage": "Send Image",
+    "emoji": "Emoji",
+    "inputPlaceholder": "Type your message...",
+    "inputBlockedPlaceholder": "You have blocked this contact.",
+    "now": "now",
+    "photo": "📷 Photo",
+    "sentImage": "sent image",
+    "reportAlert": "{{name}} has been reported.",
+    "callAlert": "Calling {{name}}...",
+    "more": {
+      "viewContact": "View Contact",
+      "pinChat": "Pin Chat",
+      "unpinChat": "Unpin Chat",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "block": "Block",
+      "unblock": "Unblock",
+      "clearChat": "Clear Chat",
+      "report": "Report"
+    }
+  },
+   "profileDetail": {
+    "notFound": "Profile not found.",
+    "notFoundDesc": "This profile could not be loaded.",
+    "backToProfiles": "← Back to Profiles",
+    "backToSearch": "← Back to Search",
+    "verified": "✓ Verified",
+    "sendInterest": "Send Interest",
+    "connected": "Connected",
+    "interestSentLabel": "Interest Sent",
+    "addToShortlist": "Add to Shortlist",
+    "shortlisted": "Shortlisted",
+    "sendMessage": "Send Message",
+    "editProfile": "Edit My Profile",
+    "aboutMe": "About Me",
+    "noAboutMe": "No description provided yet.",
+    "personalDetails": "Personal Details",
+    "familyDetails": "Family Details",
+    "hobbies": "Hobbies & Interests",
+    "languagesKnown": "Languages Known",
+    "partnerPreferences": "Partner Preferences",
+    "age": "Age",
+    "height": "Height",
+    "religion": "Religion",
+    "community": "Community",
+    "motherTongue": "Mother Tongue",
+    "maritalStatus": "Marital Status",
+    "location": "Location",
+    "profession": "Profession",
+    "education": "Education",
+    "annualIncome": "Annual Income",
+    "fatherOccupation": "Father's Occupation",
+    "motherOccupation": "Mother's Occupation",
+    "siblings": "Siblings",
+    "familyType": "Family Type",
+    "familyValues": "Family Values",
+    "ageRange": "Age Range",
+    "heightRange": "Height Range",
+    "preferredLocation": "Preferred Location",
+    "yrs": "yrs",
+    "any": "any",
+    "loginModal": {
+      "title": "Login Required",
+      "desc": "Please login or register to perform this action.",
+      "loginBtn": "Login",
+      "registerBtn": "Register Now",
+      "laterBtn": "Maybe Later"
+    },
+    "sendInterestModal": {
+      "title": "Send Interest to {{name}}",
+      "desc": "Write a personalised message to {{firstName}} (optional).",
+      "placeholder": "Hi! I came across your profile and would love to connect…",
+      "sendBtn": "Send Interest",
+      "cancelBtn": "Cancel"
+    },
+    "shortlistModal": {
+      "title": "Added to Shortlist!",
+      "desc": "{{name}} has been added to your shortlist.",
+      "okBtn": "Great!"
+    },
+    "alreadyShortlisted": {
+      "title": "Already in Shortlist",
+      "desc": "{{name}} is already in your shortlist.",
+      "viewBtn": "View Shortlist",
+      "stayBtn": "Stay on Profile"
+    },
+    "messageModal": {
+      "title": "Send Message to {{name}}",
+      "desc": "Start a conversation with {{firstName}}.",
+      "placeholder": "Type your message here…",
+      "sendBtn": "Send Message",
+      "cancelBtn": "Cancel"
+    },
+    "messageSent": {
+      "title": "Message Sent!",
+      "desc": "Your message has been sent to {{name}}.",
+      "viewBtn": "View Messages",
+      "stayBtn": "Stay on Profile"
+    },
+    "interestSent": {
+      "title": "Interest Sent!",
+      "desc": "Your interest has been sent to {{name}}. You'll be notified when they respond.",
+      "viewBtn": "View My Interests",
+      "stayBtn": "Stay on Profile"
+    },
+    "premium": {
+      "title": "Unlock Full Contact Details",
+      "desc": "Upgrade to Premium to view {{name}}'s phone number and email address.",
+      "upgradeNote": "Upgrade to Premium to view contact details",
+      "viewContact": "View Contact",
+      "sendEmail": "Send Email"
+    },
+    "contactModal": {
+      "title": "Contact Details",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "call": "Call",
+      "compose": "Email",
+      "note": "These are demo contact details. Real details will be available after upgrade.",
+      "close": "Close"
+    }
+  },
+  "profilePage": {
+    "defaultName": "—",
+    "defaultAge": "—",
+    "defaultLocation": "—",
+    "defaultDash": "—",
+    "years": "years",
+    "uploading": "Uploading…",
+    "changePhoto": "Change photo",
+    "verifyProfile": "Verify Profile",
+    "editProfile": "Edit Profile",
+    "views": "Views",
+    "interests": "Interests",
+    "photos": "Photos",
+    "aboutMe": "About Me",
+    "noAboutMe": "No description added yet. Click Edit Profile to add one.",
+    "basicDetails": "Basic Details",
+    "age": "Age",
+    "height": "Height",
+    "weight": "Weight",
+    "maritalStatus": "Marital Status",
+    "motherTongue": "Mother Tongue",
+    "religion": "Religion",
+    "caste": "Caste",
+    "contactDetails": "Contact Details",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "professionalDetails": "Professional Details",
+    "profession": "Profession",
+    "company": "Company",
+    "annualIncome": "Annual Income",
+    "educationDetails": "Education Details",
+    "highestQualification": "Highest Qualification",
+    "familyDetails": "Family Details",
+    "familyType": "Family Type",
+    "familyValues": "Family Values",
+    "siblings": "Siblings",
+    "fatherOccupation": "Father's Occupation",
+    "motherOccupation": "Mother's Occupation",
+    "hobbies": "Hobbies & Interests",
+    "photoGallery": "Photo Gallery",
+    "addPhotos": "Add Photos",
+    "gallery": "Gallery",
+    "remove": "Remove",
+    "main": "Main"
+  },
+   "registerPage": {
+    "title": "Complete Your Profile",
+    "step": "Step {{step}} of {{total}}",
+    "next": "Next",
+    "back": "Back",
+    "login": "Login",
+    "haveAccount": "Have an account?",
+    "completeRegistration": "Complete Registration",
+    "creatingAccount": "Creating Account...",
+    "successTitle": "Welcome to JeevanSaathiHub!",
+    "successMsg": "Your profile has been created successfully. Start finding your perfect match today.",
+    "getStarted": "Get Started",
+    "steps": {
+      "basic": "Basic Info",
+      "contact": "Contact",
+      "personal": "Personal",
+      "location": "Location",
+      "family": "Family",
+      "preferences": "Preferences"
+    },
+    "step1": {
+      "title": "Basic Information",
+      "profileFor": "Profile For",
+      "fullName": "Full Name",
+      "gender": "Gender",
+      "dob": "Date of Birth",
+      "maritalStatus": "Marital Status",
+      "selectGender": "Select gender",
+      "selectMarital": "Select marital status"
+    },
+    "step2": {
+      "title": "Contact Information",
+      "email": "Email Address",
+      "mobile": "Mobile Number",
+      "password": "Create Password",
+      "confirmPassword": "Confirm Password",
+      "emailHint": "We'll verify your email address via OTP in the next step"
+    },
+    "step3": {
+      "title": "Personal Details",
+      "height": "Height",
+      "weight": "Weight (kg)",
+      "religion": "Religion",
+      "caste": "Community / Caste",
+      "motherTongue": "Mother Tongue",
+      "education": "Highest Education",
+      "educationDetails": "Education Details",
+      "occupation": "Profession / Occupation",
+      "income": "Annual Income",
+      "verification": "Verification Required to Proceed",
+      "emailVerification": "Email Address Verification"
+    },
+    "step4": {
+      "title": "Location Details",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "residentialStatus": "Residential Status"
+    },
+    "step5": {
+      "title": "Family Details",
+      "fatherName": "Father's Name",
+      "fatherOccupation": "Father's Occupation",
+      "motherName": "Mother's Name",
+      "motherOccupation": "Mother's Occupation",
+      "siblings": "Siblings",
+      "familyType": "Family Type",
+      "familyValues": "Family Values",
+      "aboutMe": "About Me"
+    },
+    "step6": {
+      "title": "Partner Preferences",
+      "lookingFor": "Looking For",
+      "ageRange": "Age Range",
+      "heightRange": "Height Range",
+      "preferredEducation": "Preferred Education",
+      "preferredProfession": "Preferred Profession",
+      "preferredLocation": "Preferred Location",
+      "preferredReligion": "Preferred Religion",
+      "hobbies": "Hobbies & Interests",
+      "uploadPhotos": "Upload Profile Photos",
+      "choosePhotos": "Choose Photos",
+      "terms": "I agree to the Terms & Conditions and Privacy Policy. I confirm that all information provided is accurate."
+    },
+    "otp": {
+      "verifyEmail": "Verify Email Address",
+      "sendOtp": "Send OTP",
+      "sending": "Sending...",
+      "verifyOtp": "Verify OTP",
+      "verifying": "Verifying...",
+      "resend": "Resend OTP",
+      "emailVerified": "Email Verified",
+      "wrongEmail": "Wrong email?"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Enter a valid email address",
+      "invalidMobile": "Enter a valid mobile number",
+      "passwordShort": "Minimum 8 characters required",
+      "passwordMismatch": "Passwords do not match",
+      "ageLimit": "Must be at least 18 years old",
+      "terms": "You must accept the terms"
+     }
+      },
+  "searchPage": {
+    "title": "Search Profiles",
+    "filterProfiles": "Filter Profiles",
+    "lookingFor": "Looking for",
+    "bride": "Bride",
+    "groom": "Groom",
+    "ageFrom": "Age From",
+    "ageTo": "Age To",
+    "religion": "Religion",
+    "any": "Any",
+    "location": "Location",
+    "cityOrState": "City or State",
+    "applyFilters": "Apply Filters",
+    "searching": "Searching…",
+    "reset": "Reset",
+    "sortBy": "Sort by:",
+    "sortBestMatch": "Best Match",
+    "sortRecentlyActive": "Recently Active",
+    "sortAgeLowHigh": "Age: Low to High",
+    "sortAgeHighLow": "Age: High to Low",
+    "sortVerifiedFirst": "Verified First",
+    "sortNewest": "Newest Profiles",
+    "showingProfiles": "Showing {{count}} profiles — sorted by best match score",
+    "loginToSearch": "Login to search real profiles and connect with matches",
+    "loginBanner": "Login to search real profiles, send interests & connect with matches",
+    "loginBtn": "Login →",
+    "registerBtn": "Register Free",
+    "findingMatches": "Finding your best matches…",
+    "noProfiles": "No profiles found",
+    "tryAdjusting": "Try adjusting your filters to see more results.",
+    "loadFailed": "Failed to load profiles.",
+    "loginToSendInterest": "Please login to send interest.",
+    "sendInterestFailed": "Failed to send interest.",
+    "verified": "Verified",
+    "match": "match",
+    "viewProfile": "View Profile",
+    "sendInterest": "Send Interest",
+    "interestSent": "Interest Sent",
+    "back": "← Back",
+    "previous": "Previous",
+    "nextPage": "Next",
+    "modalTitle": "Send Interest to {{name}}?",
+    "modalDesc": "{{firstName}} will be notified about your interest.",
+    "modalPlaceholder": "Write a personal message (optional)...",
+    "modalSendBtn": "Send Interest",
+    "modalCancelBtn": "Cancel",
+    "errAgeFromRange": "Must be 18–59.",
+    "errAgeToRange": "Must be 19–60.",
+    "errAgeCompare": "Age To must be greater than Age From."
+  },
+   "settingsPage": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences and privacy",
+    "language": {
+      "title": "Language",
+      "sub": "Choose your preferred language",
+      "enLabel": "English",
+      "hiLabel": "Hindi",
+      "mrLabel": "Marathi"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "sub": "Control what alerts you receive",
+      "items": [
+        {
+          "label": "New Interest Received",
+          "sub": "Get notified when someone sends you an interest"
+        },
+        {
+          "label": "Interest Accepted",
+          "sub": "Get notified when your interest is accepted"
+        },
+        {
+          "label": "New Message",
+          "sub": "Get notified when you receive a new message"
+        },
+        {
+          "label": "Profile Views",
+          "sub": "Get notified when someone views your profile"
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy",
+      "sub": "Manage who can see your profile and details",
+      "items": [
+        {
+          "label": "Show Profile in Search",
+          "sub": "Allow your profile to appear in search results"
+        },
+        {
+          "label": "Show Online Status",
+          "sub": "Let others see when you are active"
+        },
+        {
+          "label": "Show Last Seen",
+          "sub": "Display your last active time to other members"
+        }
+      ]
+    },
+    "danger": {
+      "title": "Danger Zone",
+      "sub": "Irreversible account actions",
+      "deactivate": "Deactivate Account",
+      "delete": "Delete Account"
+    },
+    "modal": {
+      "cancel": "Cancel",
+      "deactivate": {
+        "title": "Deactivate Account?",
+        "message": "Your profile will be hidden from search results. You can reactivate it anytime by logging back in.",
+        "confirm": "Yes, Deactivate",
+        "alert": "Account deactivated. You can reactivate by logging in again."
+      },
+      "delete": {
+        "title": "Delete Account Permanently?",
+        "message": "This will permanently delete your profile, photos, and all data. This action cannot be undone.",
+        "confirm": "Yes, Delete Permanently",
+        "alert": "Account deletion requested. Our team will process it shortly."
+      }
+    }
+  },
+  "verificationPage": {
+    "otpModal": {
+      "title": "Verify OTP",
+      "sub": "Enter the 6-digit OTP sent to your registered mobile number ending with {{phone}}",
+      "verifyBtn": "Verify OTP",
+      "resendTimer": "Resend OTP in {{seconds}}s",
+      "resend": "Resend OTP"
+    },
+    "step1": {
+      "title": "Enter Your Aadhaar Number",
+      "aadhaarLabel": "Aadhaar Number",
+      "aadhaarPlaceholder": "XXXX XXXX XXXX",
+      "hint": "Your Aadhaar number is encrypted and stored securely (256-bit SSL)",
+      "howItWorks": "How it works:",
+      "howItWorksItem1": "Enter your 12-digit Aadhaar number",
+      "howItWorksItem2": "Click \"Send OTP\" - OTP will be sent to your registered mobile",
+      "howItWorksItem3": "Enter the 6-digit OTP to verify",
+      "howItWorksItem4": "Your details will be automatically fetched from UIDAI",
+      "sendOtpBtn": "Send OTP to Verify",
+      "errorInvalid": "Please enter a valid 12-digit Aadhaar number."
+    },
+    "step2": {
+      "loading": "Fetching your details from UIDAI...",
+      "successTitle": "Details Verified Successfully!",
+      "successSub": "Your information has been fetched from UIDAI",
+      "fullNameLabel": "Full Name",
+      "sampleName": "Rajesh Kumar",
+      "dobLabel": "Date of Birth",
+      "sampleDob": "15/08/1995",
+      "genderLabel": "Gender",
+      "sampleGender": "Male",
+      "addressLabel": "Address",
+      "sampleAddress": "#123, MG Road, Koramangala, Bangalore, Karnataka - 560095",
+      "mobileLabel": "Mobile Number",
+      "sampleMobile": "+91 98765 43210",
+      "noticeStrong": "Please verify:",
+      "noticeText": "Ensure all details shown above are correct. These details will be used to auto-fill your profile.",
+      "confirmBtn": "Confirm & Continue"
+    },
+    "step3": {
+      "title": "Upload Aadhaar Documents",
+      "sub": "Please upload clear photos of both sides of your Aadhaar card",
+      "frontLabel": "Front Side",
+      "backLabel": "Back Side",
+      "frontSide": "front",
+      "backSide": "back",
+      "uploadText": "Upload {{side}} side of Aadhaar card",
+      "uploadHint": "JPG, PNG or PDF (Max 5MB)",
+      "chooseFileBtn": "Choose File",
+      "guidelinesTitle": "Upload Guidelines:",
+      "guideline1": "Clear, well-lit images",
+      "guideline2": "All text should be readable",
+      "guideline3": "No shadows or reflections",
+      "guideline4": "Full document visible in frame",
+      "guideline5": "Blurry or cropped images will be rejected",
+      "completeBtn": "Complete Verification"
+    },
+    "progress": {
+      "title": "Aadhaar eKYC Verification",
+      "sub": "Instant verification with Aadhaar OTP",
+      "step1Label": "Enter Aadhaar",
+      "step2Label": "Verify Details",
+      "step3Label": "Upload Documents"
+    }
+  },
+  "shortlist": {
+    "title": "My Shortlist",
+    "subtitle": "{{count}} profiles saved",
+    "subtitleEmpty": "No profiles saved yet",
+    "total": "Total Saved",
+    "brides": "Brides",
+    "grooms": "Grooms",
+    "filter_all": "All",
+    "filter_bride": "Brides",
+    "filter_groom": "Grooms",
+    "viewProfile": "View Profile",
+    "sendMessage": "Message",
+    "remove": "Remove",
+    "clearAll": "Clear All",
+    "confirmClear": "Remove all profiles from your shortlist?",
+    "emptyTitle": "Your shortlist is empty",
+    "emptyDesc": "Browse profiles and tap the heart icon to save them here.",
+    "browseProfiles": "Browse Profiles"
+  }
+}

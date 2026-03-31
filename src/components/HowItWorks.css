@@ -1,0 +1,177 @@
+.how-section {
+  background: var(--bg-light);
+  padding: 80px 24px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── Flip wrapper — perspective lives here ── */
+.step-card-flip {
+  perspective: 1000px;
+  height: 260px;
+}
+
+/* ── Inner: the thing that actually rotates ── */
+.step-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.step-card-flip:hover .step-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ── Shared face styles ── */
+.step-card-front,
+.step-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+/* ── FRONT face: original card ── */
+.step-card-front {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FFFBEB 100%);
+  border: 1px solid rgba(204, 0, 0, 0.12);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(204, 0, 0, 0.06);
+  padding: 36px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── BACK face: red branded reveal ── */
+.step-card-back {
+  background: linear-gradient(135deg, #cc0000 0%, #e53535 100%);
+  border: 1px solid rgba(204, 0, 0, 0.30);
+  box-shadow: 0 8px 32px rgba(204, 0, 0, 0.25);
+  transform: rotateY(180deg);
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ── Step number badge (front) ── */
+.step-num {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(204, 0, 0, 0.35);
+  z-index: 2;
+}
+
+/* ── Icon (front) ── */
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.step-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* ── Front text ── */
+.step-card-front h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.step-card-front p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ── Back content ── */
+.step-back-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.60);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-card-back h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.step-card-back p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Keep .step-card as a passthrough alias so existing HTML still works ── */
+.step-card {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FFFBEB 100%);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(204, 0, 0, 0.06);
+  position: relative;
+  border: 1px solid rgba(204, 0, 0, 0.12);
+  overflow: visible;
+}
+
+.step-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .how-section { padding: 56px 16px; }
+  .steps-grid  { grid-template-columns: 1fr; gap: 28px; }
+  .step-card-flip { height: 240px; }
+}

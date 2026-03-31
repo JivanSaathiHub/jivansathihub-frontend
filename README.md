@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+# 📚 JeevanSaathiHub – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, scalable, and responsive frontend application for the **JeevanSaathiHub** platform, built using React.
+This project delivers a seamless user experience for profile discovery, matchmaking, communication, and membership management.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+* 🔐 **Authentication UI** – Login & Register flows
+* 👤 **User Dashboard** – Profile overview and activity
+* 🔍 **Advanced Search & Filters** – Find matches efficiently
+* 💬 **Real-time Messaging UI** (Socket integrated)
+* ❤️ **Interests & Shortlist System**
+* 💳 **Membership Plans & Checkout Flow**
+* 🛠️ **Admin Panel UI** (secure access via secret route)
+* ⚡ **Custom Navigation System (No React Router)**
+* 📱 Fully **Responsive Design** (Mobile + Desktop)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Frontend:** React.js
+* **State Management:** Context API (Auth, Admin, Socket, Navigation)
+* **Styling:** Custom CSS (Modern UI)
+* **API Handling:** Axios / Fetch
+* **Realtime:** Socket Integration
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Folder Structure
 
-### `npm run build`
+src/
+ ├── components/              # Reusable UI components
+ │     └── PlanSelectModal.js
+ │
+ ├── context/                 # Global state management (React Context)
+ │     ├── AuthContext.js
+ │     ├── AdminContext.js
+ │     ├── SocketContext.js
+ │     └── FooterNavContext.js
+ │
+ ├── pages/
+ │     ├── user/              # User-facing pages
+ │     │     ├── HomePage.js
+ │     │     ├── AboutPage.js
+ │     │     ├── RegisterPage.js
+ │     │     ├── LoginPage.js
+ │     │     ├── HelpPage.js
+ │     │     ├── SearchPage.js
+ │     │     ├── ProfileDetail.js
+ │     │     ├── MembershipPlansPage.js
+ │     │     ├── CheckoutPage.js
+ │     │     ├── PaymentSuccessPage.js
+ │     │     ├── InterestsPage.js
+ │     │     ├── DashboardPage.js
+ │     │     ├── ProfilePage.js
+ │     │     ├── MatchesPage.js
+ │     │     ├── MessagesPage.js
+ │     │     ├── VerificationPage.js
+ │     │     ├── EditProfilePage.js
+ │     │     ├── SettingsPage.js
+ │     │     └── ShortlistPage.js
+ │
+ │     └── admin/             # Admin panel pages
+ │           ├── AdminLayout.js
+ │           └── AdminLoginPage.js
+ │
+ ├── styles/                  # Global styles
+ │     └── global.css
+ │
+ ├── App.js                   # Custom routing & navigation logic
+ └── index.js                 # Entry point
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧠 Architecture Highlight
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project uses a **custom state-based navigation system** instead of React Router.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Routing handled inside `App.js`
+* Page switching via `useState`
+* Centralized navigation functions
+* Clean separation of user & admin flows
 
-### `npm run eject`
+## ⚙️ Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1️⃣ Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone https://github.com/JivanSaathiHub/jivansathihub-frontend.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2️⃣ Navigate to project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd jivansathihub-frontend
 
-## Learn More
+### 3️⃣ Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### 4️⃣ Start development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔑 Environment Variables
 
-### Making a Progressive Web App
+Create a `.env` file in the root directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+REACT_APP_API_URL=http://localhost:5000/api
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📸 Screenshots
 
-### `npm run build` fails to minify
+> Add your UI screenshots here (Home, Dashboard, Search, Messages, Admin Panel)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 🌐 Live Demo
+
+> Add deployed link (Netlify / Vercel)
+
+
+## 🔮 Future Enhancements
+
+* 🔔 Notifications system
+* 📊 Advanced analytics dashboard
+* 🌍 Multi-language support
+* ⚡ Performance optimization (lazy loading)
+
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push and create a Pull Request
+
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+
+## 👨‍💻 Author
+
+**Sahil Pathan**
+Frontend Developer 🚀
+
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!

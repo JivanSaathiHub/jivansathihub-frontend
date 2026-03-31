@@ -1,0 +1,796 @@
+/* ══════════════════════════════════════════
+   MESSAGES PAGE — MessagesPage.css
+   Pixel-matched to screenshot
+   Fully responsive (mobile → desktop)
+══════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Page shell ── */
+.msgp-main {
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+  padding: 88px 20px 48px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Outer container — the big white card ── */
+.msgp-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: calc(100vh - 180px);
+  min-height: 520px;
+  overflow: hidden;
+}
+
+/* ══════════════════════════════════════════
+   LEFT SIDEBAR — conversation list
+══════════════════════════════════════════ */
+.msgp-sidebar {
+  width: 340px;
+  flex-shrink: 0;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* Search bar */
+.msgp-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px 14px;
+  color: #9ca3af;
+}
+
+.msgp-search {
+  flex: 1;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 9px 14px 9px 10px;
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+  outline: none;
+  background: #f9fafb;
+  transition: border-color 0.18s;
+  width: 100%;
+}
+
+.msgp-search:focus { border-color: #e11d48; background: #fff; }
+.msgp-search::placeholder { color: #9ca3af; }
+
+.msgp-search-wrap svg {
+  position: absolute;
+  left: 28px;
+  pointer-events: none;
+}
+
+/* Wrap the search icon inside */
+.msgp-search-wrap {
+  position: relative;
+  padding: 16px 16px 0;
+}
+
+.msgp-search-wrap svg {
+  position: static;
+  flex-shrink: 0;
+}
+
+/* Override: icon sits inside input visually via flex gap */
+.msgp-search-wrap {
+  background: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 9px 14px;
+  margin: 14px 14px 0;
+  gap: 8px;
+  color: #9ca3af;
+  transition: border-color 0.18s;
+}
+
+.msgp-search-wrap:focus-within {
+  border-color: #e11d48;
+  background: #fff;
+}
+
+.msgp-search {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+  outline: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.msgp-search::placeholder { color: #9ca3af; }
+
+/* ══════════════════════════════════════════
+   FILTER TABS — WhatsApp-style pill buttons
+══════════════════════════════════════════ */
+.msgp-filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+
+.msgp-filter-tabs::-webkit-scrollbar { display: none; }
+
+.msgp-filter-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1.5px solid #e5e7eb;
+  background: #fff;
+  color: #6b7280;
+  font-size: 12.5px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.18s ease;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.msgp-filter-tab:hover {
+  border-color: #fda4af;
+  color: #e11d48;
+  background: #fff5f5;
+}
+
+.msgp-filter-tab.active {
+  background: #e11d48;
+  border-color: #e11d48;
+  color: #fff;
+  font-weight: 600;
+}
+
+.msgp-filter-tab .tab-badge {
+  background: rgba(255,255,255,0.35);
+  color: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.msgp-filter-tab:not(.active) .tab-badge {
+  background: #fef2f2;
+  color: #e11d48;
+}
+
+.msgp-sidebar-divider {
+  height: 1px;
+  background: #f3f4f6;
+  margin: 10px 0 0;
+}
+
+/* Contact list */
+.msgp-contact-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.msgp-contact-list::-webkit-scrollbar { width: 4px; }
+.msgp-contact-list::-webkit-scrollbar-track { background: transparent; }
+.msgp-contact-list::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
+
+/* Single contact row */
+.msgp-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.msgp-contact:hover { background: #fef2f2; }
+
+.msgp-contact.active {
+  background: #fff5f5;
+  border-left-color: #e11d48;
+}
+
+/* Avatar with online dot */
+.msg-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.msg-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fde8e8, #ffd0d0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #e11d48;
+  font-family: 'Inter', sans-serif;
+}
+
+.msg-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.msg-online-dot {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #16a34a;
+  border: 2px solid #fff;
+}
+
+/* Contact info */
+.msgp-contact-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.msgp-contact-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.msgp-contact-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.msgp-contact-time {
+  font-size: 11.5px;
+  color: #9ca3af;
+  flex-shrink: 0;
+  margin-left: 6px;
+  font-family: 'Inter', sans-serif;
+}
+
+.msgp-contact-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.msgp-contact-preview {
+  font-size: 12.5px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+}
+
+.msgp-unread-badge {
+  background: #e11d48;
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  flex-shrink: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ══════════════════════════════════════════
+   RIGHT — chat window
+══════════════════════════════════════════ */
+.msgp-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #fff;
+}
+
+/* Chat header */
+.msgp-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.msgp-chat-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.msgp-chat-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.msgp-chat-header-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+.msgp-chat-header-status {
+  font-size: 12px;
+  color: #16a34a;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.msgp-chat-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.msgp-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.msgp-icon-btn:hover { background: #f3f4f6; }
+
+.msgp-view-profile-btn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #2563eb;
+  background: transparent;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.msgp-view-profile-btn:hover { background: #2563eb; color: #fff; }
+
+/* ══════════════════════════════════════════
+   MESSAGES AREA — fixed alignment
+══════════════════════════════════════════ */
+.msgp-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.msgp-messages::-webkit-scrollbar { width: 4px; }
+.msgp-messages::-webkit-scrollbar-track { background: transparent; }
+.msgp-messages::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
+
+/* Time label */
+.msgp-time-label {
+  text-align: left;
+  font-size: 11.5px;
+  color: #9ca3af;
+  margin: 10px 0 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Bubble row */
+.msgp-bubble-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.msgp-bubble-row.me  { justify-content: flex-end; }
+.msgp-bubble-row.them { justify-content: flex-start; }
+
+/* Bubble */
+.msgp-bubble {
+  max-width: 62%;
+  padding: 11px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-family: 'Inter', sans-serif;
+  word-break: break-word;
+  flex-shrink: 0;
+}
+
+.msgp-bubble--me {
+  background: #e11d48;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+  margin-left: auto;
+}
+
+.msgp-bubble--them {
+  background: #f3f4f6;
+  color: #111827;
+  border-bottom-left-radius: 4px;
+  margin-right: auto;
+}
+
+/* ══════════════════════════════════════════
+   INPUT BAR + EMOJI PICKER ANCHOR
+══════════════════════════════════════════ */
+.msgp-input-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-top: 1px solid #f3f4f6;
+  background: #fff;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.msgp-input-tools {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.msgp-tool-btn {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: transparent;
+  color: #111827;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.msgp-tool-btn:hover { background: #f3f4f6; }
+
+.msgp-input {
+  flex: 1;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+  color: #070808;
+  outline: none;
+  background: #f9fafb;
+  transition: border-color 0.18s;
+  min-width: 0;
+}
+
+.msgp-input:focus { border-color: #e11d48; background: #fff; }
+.msgp-input::placeholder { color: #404044; }
+
+.msgp-send-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: #e11d48;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.18s, transform 0.14s;
+}
+
+.msgp-send-btn:hover:not(:disabled) { background: #be123c; transform: scale(1.05); }
+.msgp-send-btn:disabled { background: #fca5a5; cursor: not-allowed; }
+
+/* ── Back button: hidden on desktop/tablet ── */
+.msgp-back-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: #111827;
+  cursor: pointer;
+  border-radius: 50%;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background 0.15s;
+}
+.msgp-back-btn:hover { background: #f3f4f6; }
+
+/* ══════════════════════════════════════════
+   EMOJI PICKER — Fixed, professional layout
+══════════════════════════════════════════ */
+.msgp-emoji-picker {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 12px;
+  z-index: 300;
+  animation: moreDropIn 0.18s cubic-bezier(0.34, 1.26, 0.64, 1);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 641px) {
+  .msgp-emoji-picker {
+    max-width: calc(100% - 20px);
+  }
+}
+
+.msgp-emoji-btn {
+  width: 100%;
+  aspect-ratio: 1;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s, transform 0.1s;
+  padding: 0;
+  line-height: 1;
+}
+
+.msgp-emoji-btn:hover {
+  background: #f3f4f6;
+  transform: scale(1.18);
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — desktop / tablet (ORIGINAL — unchanged)
+══════════════════════════════════════════ */
+
+@media (min-width: 1300px) {
+  .msgp-main { padding: 88px 24px 48px; }
+}
+
+@media (max-width: 1299px) and (min-width: 861px) {
+  .msgp-main { padding: 88px 16px 40px; }
+  .msgp-container { height: calc(100vh - 172px); min-height: 500px; }
+  .msgp-sidebar { width: 300px; }
+}
+
+@media (max-width: 860px) {
+  .msgp-main { padding: 82px 10px 32px; }
+  .msgp-container { height: calc(100vh - 160px); min-height: 480px; }
+  .msgp-sidebar { width: 240px; }
+  .msgp-contact-name { font-size: 13px; }
+  .msgp-contact-preview { font-size: 11.5px; }
+  .msgp-bubble { max-width: 78%; }
+  .msgp-view-profile-btn { padding: 6px 12px; font-size: 12px; }
+  .msgp-filter-tabs { gap: 6px; padding: 8px 10px 2px; }
+  .msgp-filter-tab { padding: 4px 10px; font-size: 11.5px; }
+  .msgp-emoji-picker { width: 264px; }
+}
+
+/* ══════════════════════════════════════════
+   MOBILE (≤ 640px) — WhatsApp-style
+   ✅ ONLY SECTION CHANGED — nav gap fix
+══════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .msgp-main {
+    padding: 0; /* ✅ body has 60px padding-top from Navbar; no extra needed on mobile */
+  }
+
+  .msgp-container {
+    position: relative;
+    height: calc(100vh - 60px); /* ✅ exactly fills screen below fixed nav */
+    min-height: unset;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    overflow: hidden;
+  }
+
+  .msgp-sidebar {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    border-bottom: none;
+    z-index: 10;
+    transform: translateX(0);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .msgp-contact { padding: 14px 16px; gap: 12px; }
+  .msgp-contact-list { flex: 1; overflow-y: auto; max-height: unset; }
+
+  .msgp-container[data-showchat="1"] .msgp-sidebar {
+    transform: translateX(-100%);
+  }
+
+  .msgp-chat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .msgp-container[data-showchat="1"] .msgp-chat {
+    transform: translateX(0);
+    z-index: 11;
+  }
+
+  .msgp-messages {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 12px 12px 8px;
+  }
+
+  .msgp-back-btn { display: flex; }
+  .msgp-view-profile-btn { display: none; }
+  .msgp-bubble { max-width: 80%; font-size: 13.5px; }
+  .msgp-chat-header { padding: 10px 12px; }
+  .msgp-input-bar { padding: 8px 10px; gap: 6px; flex-shrink: 0; }
+  .msgp-tool-btn { width: 30px; height: 30px; }
+  .msgp-send-btn { width: 38px; height: 38px; }
+  .msgp-filter-tabs { gap: 8px; padding: 10px 14px 2px; }
+  .msgp-filter-tab { padding: 6px 16px; font-size: 13px; border-width: 1.5px; }
+
+  .msgp-emoji-picker {
+    width: calc(100vw - 24px);
+    left: 0;
+    right: auto;
+    bottom: calc(100% + 8px);
+    max-width: 320px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 380px) {
+  .msgp-chat-header-name { font-size: 13px; }
+  .msgp-bubble { max-width: 88%; padding: 8px 11px; font-size: 12.5px; }
+  .msgp-tool-btn { width: 26px; height: 26px; }
+  .msgp-send-btn { width: 34px; height: 34px; border-radius: 8px; }
+  .msgp-input { font-size: 13px; padding: 8px 12px; }
+  .msgp-filter-tab { padding: 5px 12px; font-size: 12px; }
+  .msgp-emoji-picker {
+    width: calc(100vw - 20px);
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+/* ══════════════════════════════════════════
+   MORE DROPDOWN — 3-dot menu
+══════════════════════════════════════════ */
+.msgp-more-wrap { position: relative; }
+
+.msgp-more-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 188px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  overflow: hidden;
+  animation: moreDropIn 0.16s cubic-bezier(0.34, 1.26, 0.64, 1);
+}
+
+@keyframes moreDropIn {
+  from { opacity: 0; transform: translateY(-6px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+.msgp-more-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 11px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #111827;
+  text-align: left;
+  transition: background 0.14s;
+}
+
+.msgp-more-item:hover { background: #f9fafb; }
+.msgp-more-item + .msgp-more-item { border-top: 1px solid #f3f4f6; }
+.msgp-more-item.danger { color: #dc2626; }
+.msgp-more-item.danger:hover { background: #fef2f2; }
+
+.msgp-more-item-icon {
+  font-size: 16px;
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.msgp-more-item-label {
+  flex: 1;
+  white-space: nowrap;
+}
+
+/* ── Typing indicator dots ── */
+@keyframes typing-dot {
+  0%, 60%, 100% { transform: translateY(0);   opacity: 0.4; }
+  30%           { transform: translateY(-4px); opacity: 1;   }
+}

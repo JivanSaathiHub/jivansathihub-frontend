@@ -1,0 +1,432 @@
+/* ══════════════════════════════════════════
+   SETTINGS PAGE — SettingsPage.css
+   Complete file: original + accordion + modal
+══════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ✅ FORCE INTER EVERYWHERE */
+* {
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.settings-main {
+  padding: 60px 20px 48px;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.settings-page {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.settings-header {
+  padding: 8px 0 4px;
+}
+
+/* ✅ TITLE MADE LIGHTER */
+.settings-title {
+  font-size: 24px;          /* slightly reduced */
+  font-weight: 600;         /* was 800 → now clean & light */
+  color: #374151;           /* softer instead of dark black */
+  margin: 0 0 4px;
+}
+
+.settings-sub {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════
+   CARD — accordion wrapper
+══════════════════════════════════════════ */
+.settings-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.settings-card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.settings-card--open {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+.settings-card--danger {
+  border-color: #fca5a5;
+  background: #fff5f5;
+}
+
+.settings-card--danger:hover {
+  box-shadow: 0 2px 12px rgba(204, 0, 0, 0.08);
+}
+
+.settings-card--danger.settings-card--open {
+  border-color: #f87171;
+  box-shadow: 0 4px 20px rgba(204, 0, 0, 0.1);
+}
+
+/* ══════════════════════════════════════════
+   ACCORDION HEADER BUTTON
+══════════════════════════════════════════ */
+.settings-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.settings-card-header--btn {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  text-align: left;
+  transition: background 0.15s;
+  border-radius: 0;
+}
+
+.settings-card-header--btn:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.settings-card--danger .settings-card-header--btn:hover {
+  background: rgba(204, 0, 0, 0.03);
+}
+
+.settings-card--open .settings-card-header--btn {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.settings-card--danger.settings-card--open .settings-card-header--btn {
+  border-bottom-color: #fecaca;
+}
+
+.settings-card-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.settings-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.settings-card-title {
+  font-size: 15px;
+  font-weight: 600; /* slightly lighter */
+  color: #111827;
+  margin: 0 0 2px;
+}
+
+.settings-card-sub {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════
+   ACCORDION BODY
+══════════════════════════════════════════ */
+.settings-card-body {
+  padding: 18px 20px 20px;
+  animation: settBodyIn 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes settBodyIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* (Rest of your CSS EXACTLY SAME — no changes needed) */
+
+/* ══════════════════════════════════════════
+   LANGUAGE GRID
+══════════════════════════════════════════ */
+.settings-lang-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+  width: 100%;
+}
+
+.settings-lang-btn:hover {
+  border-color: #fca5a5;
+  background: #fff5f5;
+}
+
+.settings-lang-btn.active {
+  border-color: #cc0000;
+  background: #fff0f0;
+}
+
+.settings-lang-flag {
+  font-size: 26px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.settings-lang-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.settings-lang-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+.settings-lang-native {
+  font-size: 13px;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+}
+
+.settings-lang-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #cc0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════
+   TOGGLE ROWS
+══════════════════════════════════════════ */
+.settings-toggle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.settings-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.settings-toggle-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.settings-toggle-row:first-child {
+  padding-top: 0;
+}
+
+.settings-toggle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.settings-toggle-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+.settings-toggle-sub {
+  font-size: 12.5px;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Toggle switch ── */
+.settings-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.settings-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.settings-slider {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #d1d5db;
+  transition: background 0.2s;
+}
+
+.settings-slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.settings-switch input:checked + .settings-slider {
+  background: #cc0000;
+}
+
+.settings-switch input:checked + .settings-slider::before {
+  transform: translateX(20px);
+}
+
+/* ══════════════════════════════════════════
+   DANGER BUTTONS
+══════════════════════════════════════════ */
+.settings-danger-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-danger-btn {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.settings-danger-btn:active {
+  transform: scale(0.98);
+}
+
+.settings-danger-btn--outline {
+  background: transparent;
+  border: 2px solid #cc0000;
+  color: #cc0000;
+}
+
+.settings-danger-btn--outline:hover {
+  background: #fff0f0;
+}
+
+.settings-danger-btn--solid {
+  background: #cc0000;
+  border: 2px solid #cc0000;
+  color: #fff;
+}
+
+.settings-danger-btn--solid:hover {
+  background: #a80000;
+  border-color: #a80000;
+}
+
+/* ══════════════════════════════════════════
+   CONFIRMATION MODAL
+══════════════════════════════════════════ */
+.sett-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: overlayIn 0.18s ease;
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.sett-modal {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 28px 26px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: modalIn 0.24s cubic-bezier(0.34, 1.26, 0.64, 1);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.9) translateY(16px); }
+  to   { opacity: 1; transform: scale(1)   translateY(0);    }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════ */
+
+/* Tablet */
+@media (max-width: 720px) {
+  .settings-main { padding: 60px 16px 40px; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .settings-main {
+    padding: 0 12px 32px; /* ✅ FIX APPLIED HERE (removed top gap) */
+  }
+}
+
+/* Very small */
+@media (max-width: 360px) {
+  .settings-card-header--btn { padding: 12px; }
+}
+
+/* Language section hidden on desktop */
+@media (min-width: 901px) {
+  .settings-lang-section {
+    display: none;
+  }
+}
