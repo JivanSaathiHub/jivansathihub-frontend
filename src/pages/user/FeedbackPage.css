@@ -1,0 +1,250 @@
+.feedback-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #de2222, #dbdada);
+  padding: 20px;
+}
+
+.feedback-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.feedback-card h2 {
+  color: #cc0000;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Floating input */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #999;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #cc0000;
+}
+
+/* Category */
+.category {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.category button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category button.active {
+  background: #cc0000;
+  color: white;
+}
+
+/* Emoji */
+.emoji-rating span {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+.emoji-rating span.active {
+  transform: scale(1.3);
+}
+
+/* Stars */
+.rating span {
+  font-size: 26px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.rating span.active {
+  color: gold;
+}
+
+/* Character count */
+.char-count {
+  font-size: 12px;
+  color: #777;
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #cc0000;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #a80000;
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Success */
+.success-msg {
+  background: #e6ffe6;
+  padding: 10px;
+  border-radius: 8px;
+  color: green;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   Extra Small Devices (Mobile < 480px)
+================================= */
+@media (max-width: 480px) {
+  .feedback-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .feedback-card h2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .category {
+    flex-direction: column;
+  }
+
+  .category button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .rating span {
+    font-size: 22px;
+  }
+
+  .emoji-rating span {
+    font-size: 20px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   Small Devices (481px - 768px)
+================================= */
+@media (min-width: 481px) and (max-width: 768px) {
+  .feedback-card {
+    padding: 25px;
+    max-width: 450px;
+  }
+
+  .feedback-card h2 {
+    font-size: 22px;
+  }
+
+  .category button {
+    font-size: 13px;
+  }
+
+  .rating span {
+    font-size: 24px;
+  }
+
+  .emoji-rating span {
+    font-size: 22px;
+  }
+}
+
+/* ===============================
+   Medium Devices (769px - 1024px)
+================================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .feedback-card {
+    max-width: 480px;
+    padding: 28px;
+  }
+
+  .feedback-card h2 {
+    font-size: 24px;
+  }
+}
+
+/* ===============================
+   Large Devices (1025px - 1440px)
+================================= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .feedback-card {
+    max-width: 500px;
+  }
+}
+
+/* ===============================
+   Extra Large Devices (>1440px)
+================================= */
+@media (min-width: 1441px) {
+  .feedback-card {
+    max-width: 550px;
+    padding: 35px;
+  }
+
+  .feedback-card h2 {
+    font-size: 28px;
+  }
+}

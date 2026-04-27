@@ -24,6 +24,8 @@
     "matches":          "Matches",
     "messages":         "Messages",
     "shortlisted":      "Shortlisted",
+    "feedback":         "Feedback",
+    "support":          "Support Tickets",
     "settings":         "Settings"
   },
   "home": {
@@ -1936,5 +1938,50 @@
     "emptyTitle": "Your shortlist is empty",
     "emptyDesc": "Browse profiles and tap the heart icon to save them here.",
     "browseProfiles": "Browse Profiles"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "subtitle": "We value your feedback. Please share your experience.",
+    "success": "Thank you! Your feedback has been submitted successfully.",
+    "name": "Name",
+    "email": "Email",
+    "selectType": "Select Feedback Type",
+    "message": "Your Message",
+    "submit": "Submit Feedback",
+    "submitting": "Submitting...",
+    "category": {
+      "bug": "Bug Report",
+      "suggestion": "Suggestion",
+      "experience": "User Experience"
+    }
+  },
+    "support": {
+  "createTicket": "Create Support Ticket",
+  "subject": "Subject",
+  "selectCategory": "Select Category",
+  "message": "Describe your issue...",
+  "submit": "Submit Ticket",
+  "submitting": "Submitting...",
+  "myTickets": "My Tickets",
+  "loading": "Loading...",
+  "noTickets": "No tickets yet",
+  "pending": "Pending",
+  "success": "Ticket submitted successfully!",
+
+  "priority": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+
+  "categories": {
+    "technical": "Technical Issue",
+    "payment": "Payment Issue",
+    "account": "Account Issue",
+    "general": "General Query",
+    "feature": "Feature Request"
   }
 }
+
+}
+

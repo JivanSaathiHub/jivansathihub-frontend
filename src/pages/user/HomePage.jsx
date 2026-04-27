@@ -7,7 +7,6 @@ import SuccessStories   from "../../components/SuccessStories";
 import MembershipPlans  from "../../components/MembershipPlans";
 import TrustSafety      from "../../components/TrustSafety";
 import Footer           from "../../components/Footer";
-
 export default function HomePage({ onRegister, onLogin, onHelp, onSearch, onViewProfile, onPlanClick, onAbout, onMenuClick, onDashboard }) {
   return (
     <div className="site-wrapper">

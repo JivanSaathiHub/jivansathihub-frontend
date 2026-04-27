@@ -337,12 +337,18 @@ export default function LoginPage({ onBack, onRegister, onHelp, onAboutClick, on
   };
 
   const validate = () => {
-    const errs = {};
-    if (!form.email)    errs.email    = t('login.errors.emailRequired');
-    else if (!/\S+@\S+\.\S+/.test(form.email)) errs.email = t('login.errors.emailInvalid');
-    if (!form.password) errs.password = t('login.errors.passwordRequired');
-    return errs;
-  };
+  const errs = {};
+
+  if (!form.password)
+    errs.password = t('login.errors.passwordRequired');
+  else if (
+    !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/.test(form.password)
+  )
+    errs.password = t('login.errors.passwordStrong');
+
+  return errs;
+};
+
 
   const handleSubmit = async () => {
     const errs = validate();

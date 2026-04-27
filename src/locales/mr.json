@@ -24,7 +24,9 @@
     "matches":          "जुळणारे",
     "messages":         "संदेश",
     "shortlisted":      "शॉर्टलिस्ट",
-    "settings":         "सेटिंग्ज"
+    "feedback":         "फीडबैक",
+    "settings":         "सेटिंग्ज",
+    "support":          "सपोर्ट"
   },
   "home": {
     "heroTitle":        "आपला जीवनसाथी शोधा",
@@ -2036,5 +2038,53 @@
       "viewContact": "संपर्क पहा",
       "sendEmail": "ईमेल पाठवा"
     }
+  },
+ 
+  "feedback": {
+    "title": "आपला अभिप्राय शेअर करा",
+    "subtitle": "आपला अनुभव सुधारण्यासाठी आम्हाला मदत करा",
+    "name": "नाव",
+    "email": "ईमेल",
+    "message": "आपला अभिप्राय",
+    "submit": "अभिप्राय सबमिट करा",
+    "submitting": "सबमिट होत आहे...",
+    "success": "अभिप्राय यशस्वीरित्या पाठवला!",
+    "selectType": "प्रकार निवडा",
+    "category": {
+      "bug": "बग",
+      "suggestion": "सूचना",
+      "experience": "अनुभव"
+    }
+  },
+  
+  "support": {
+    "createTicket": "सपोर्ट तिकीट तयार करा",
+    "subject": "विषय",
+    "selectCategory": "श्रेणी निवडा",
+    "message": "आपली समस्या वर्णन करा...",
+    "submit": "तिकीट सबमिट करा",
+    "submitting": "सबमिट होत आहे...",
+    "myTickets": "माझी तिकीटे",
+    "loading": "लोड होत आहे...",
+    "noTickets": "अजून कोणतीही तिकीटे नाहीत",
+    "pending": "प्रलंबित",
+    "success": "तिकीट यशस्वीरित्या सबमिट झाले!",
+
+    "priority": {
+      "high": "उच्च",
+      "medium": "मध्यम",
+      "low": "कमी"
+    },
+
+    "categories": {
+      "technical": "तांत्रिक समस्या",
+      "payment": "पेमेंट समस्या",
+      "account": "खाते समस्या",
+      "general": "सामान्य चौकशी",
+      "feature": "नवीन फीचर विनंती"
+    }
   }
-}
+  
+  }
+
+

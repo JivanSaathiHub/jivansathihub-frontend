@@ -120,7 +120,7 @@ const MATCHES = [
 /* ══════════════════════════════════════════
    MATCH CARD (translated)
 ══════════════════════════════════════════ */
-function MatchCard({ match, onViewProfile, onMessage }) {
+function MatchCard({ match, onViewProfile, onMessage}) {
   const { t } = useTranslation();
   const initials = match.name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
   const [imgError, setImgError] = useState(false);
@@ -214,6 +214,7 @@ export default function MatchesPage({
   onViewProfile,
   onPlanClick,
   onMessage,
+  
 }) {
   const { t } = useTranslation();
   const [matches] = useState(MATCHES);

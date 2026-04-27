@@ -3,6 +3,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { AdminProvider } from "./context/AdminContext";
 import { SocketProvider } from "./context/SocketContext";
 import { FooterNavContext } from "./context/FooterNavContext";
+
 import "./styles/global.css";
 
 /* ── User Pages ── */
@@ -25,6 +26,8 @@ import VerificationPage    from "./pages/user/VerificationPage";
 import EditProfilePage     from "./pages/user/EditProfilePage";
 import SettingsPage        from "./pages/user/SettingsPage";
 import ShortlistPage       from "./pages/user/ShortlistPage";
+import FeedbackPage        from "./pages/user/FeedbackPage";
+import SupportTickets      from "./pages/user/SupportTickets";
 
 /* ── Legal Pages ── */
 import PrivacyPolicyPage      from "./pages/user/PrivacyPolicyPage";
@@ -101,6 +104,8 @@ function AppRoutes() {
   const goRefund      = () => { setPage("refund-policy");   scrollTop(); };
   const goCookie      = () => { setPage("cookie-policy");   scrollTop(); };
   const goAdminLogin  = () => { setPage("admin-login");     scrollTop(); };
+  const goFeedback     = () => { setPage("feedback");        scrollTop(); };
+  const goSupport      = () => { setPage("support");         scrollTop(); };
 
   const goInterests = (tab = "pending") => {
     setInterestsInitialTab(tab);
@@ -154,6 +159,8 @@ function AppRoutes() {
     setShowPlanModal(false);
   };
 
+  
+
   /* ───────── USER MENU HANDLER ───────── */
 
   const handleMenuClick = (key) => {
@@ -169,6 +176,8 @@ function AppRoutes() {
     if (key === "settings")     goSettings();
     if (key === "admin")        goAdmin();
     if (key === "admin-login")  goAdminLogin();
+    if (key === "feedback")     goFeedback();
+    if (key === "support")      goSupport();
   };
 
   /* ───────── FOOTER NAV ───────── */
@@ -183,6 +192,8 @@ function AppRoutes() {
     if (key === "terms")          goTerms();
     if (key === "refund-policy")  goRefund();
     if (key === "cookie-policy")  goCookie();
+    if (key === "feedback")       goFeedback();
+    if (key === "support")        goSupport();
   };
 
   /* ───────── PAGE RESOLVER ───────── */
@@ -460,11 +471,31 @@ function AppRoutes() {
         />
       );
       break;
-
-    case "privacy-policy":
+      case "feedback":
       currentPage = (
-        <PrivacyPolicyPage
-          onBack={goHome}
+        <FeedbackPage
+         onBack={goHome}
+          onLogin={goLogin}
+          onRegister={goRegister}
+          onHelp={goHelp}
+          onAboutClick={goAbout}
+          onViewProfile={goProfile}
+          onMessage={goMessages}
+          onSearch={goSearch}
+          onMenuClick={handleMenuClick} />);
+      break;
+      
+       case "support":
+      currentPage = (
+        <SupportTickets
+         onBack={goHome}
+          onLogin={goLogin}
+          onHelp={goHelp}         
+          onAboutClick={goAbout}
+          onViewProfile={goProfile}
+          onRegister={goRegister}
+          onMessage={goMessages}
+          onSearch={goSearch}
           onMenuClick={handleMenuClick}
         />
       );
@@ -516,7 +547,7 @@ function AppRoutes() {
   return (
     <FooterNavContext.Provider value={handleFooterNav}>
       {currentPage}
-      {showPlanModal && <PlanSelectModal onSelect={handlePlanSelected} />}
+      {showPlanModal && <PlanSelectModal onSelect={handlePlanSelected} />}  
     </FooterNavContext.Provider>
   );
 }
@@ -531,4 +562,4 @@ export default function App() {
       </AdminProvider>
     </AuthProvider>
   );
-}
+} 

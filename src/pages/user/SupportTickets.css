@@ -1,0 +1,309 @@
+.us-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ap-page {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #111827;
+  padding-top: 64px;
+}
+
+/* Remove space between navbar and page in mobile view */
+@media (max-width: 900px) {
+  .ap-page {
+    padding-top: 0 !important;
+  }
+}
+
+/* Card */
+.us-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(167, 40, 40, 0.05);
+}
+
+.us-card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Form */
+.us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.us-form input,
+.us-form select,
+.us-form textarea {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.us-form button {
+  background: #a62020;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.us-form button:hover {
+  background: blue;
+  color: whitesmoke;
+}
+
+/* Ticket */
+.us-ticket {
+  border: 1px solid #e5e7eb;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.us-ticket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.us-ticket-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  margin: 6px 0;
+  color: #6b7280;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.pending {
+  background: #c0c0c0;
+  color: #a31a0b;
+}
+
+.status.resolved {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* Priority */
+.priority {
+  font-weight: 600;
+}
+
+.priority.high {
+  color: #dc2626;
+}
+
+.priority.medium {
+  color: #ca8a04;
+}
+
+.priority.low {
+  color: #0284c7;
+}
+
+/* Empty */
+.us-empty {
+  text-align: center;
+  color: #9ca3af;
+}
+
+/* Date */
+.us-date {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 8px;
+}/* ───────────────── GLOBAL ───────────────── */
+.us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 30px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ───────────────── CARD ───────────────── */
+.us-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.us-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ───────────────── FORM ───────────────── */
+.us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.us-form input,
+.us-form select,
+.us-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.us-form input:focus,
+.us-form select:focus,
+.us-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* ───────────────── BUTTON ───────────────── */
+.us-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #dd2222, #5c2323);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ 
+.us-form button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.us-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ───────────────── TICKETS ───────────────── */
+.us-ticket {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #6366f1;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.us-ticket:hover {
+  transform: translateX(5px);
+}
+
+/* ─── Top ─── */
+.us-ticket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ─── Status Badge ─── */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status.resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* ─── Meta ─── */
+.us-ticket-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+/* ─── Priority Badge ─── */
+.priority {
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority.high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.priority.medium {
+  background: #e0f2fe;
+  color: #a10803;
+}
+
+.priority.low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* ─── Date ─── */
+.us-date {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+}
+
+/* ─── Empty State ─── */
+.us-empty {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+/* ───────────────── RESPONSIVE ───────────────── */
+@media (max-width: 900px) {
+  .us-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ───────────────── SCROLLBAR ───────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}

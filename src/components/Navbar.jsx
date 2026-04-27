@@ -34,6 +34,8 @@ function useMenuItems() {
     { key: "matches",    label: t("menu.matches"),      sub: null,                  badge: null,  icon: <IcoMatches   /> },
     { key: "messages",   label: t("menu.messages"),     sub: null,                  badge: null,  icon: <IcoMsg       /> },
     { key: "shortlist",  label: t("menu.shortlisted"),  sub: null,                  badge: null,  icon: <IcoStar      /> },
+    { key: "feedback",   label: t("menu.feedback"),     sub: null,                  badge: null,  icon: <IcoFeedback  /> },
+    { key: "support",    label: t("menu.support"),      sub: null,                  badge: null,  icon: <IcoSupport   /> },
     { key: "settings",   label: t("menu.settings"),     sub: null,                  badge: null,  icon: <IcoSettings  /> },
   ];
 }
@@ -46,9 +48,11 @@ function IcoHeart()     { return <svg width="16" height="16" viewBox="0 0 24 24"
 function IcoMatches()   { return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>; }
 function IcoMsg()       { return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>; }
 function IcoStar()      { return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>; }
+function IcoFeedback()  { return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 5V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M15 7l2 2"/><path d="M14 8l-5 5v2h2l5-5-2-2z"/></svg>;}
+function IcoSupport()   { return  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 7h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4V7z" /><line x1="12" y1="7" x2="12" y2="17" strokeDasharray="2 2" /></svg>;}
 function IcoSettings()  { return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>; }
 function IcoBell()      { return <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>; }
-function IcoChevron({ open }) { return <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.25s" }}><polyline points="6 9 12 15 18 9"/></svg>; }
+function IcoChevron({ open }){ return <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.25s" }}><polyline points="6 9 12 15 18 9"/></svg>; }
 function IcoLogout()    { return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#cc0000" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>; }
 
 function notifIcon(type) {
@@ -233,7 +237,8 @@ export default function Navbar({
   const { t }                        = useTranslation();
   const { isLoggedIn, user, logout } = useAuth();
   const { notifications, unreadCount, clearNotif } = useSocketContext();
-
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
+  
   const [showNotif, setShowNotif] = useState(false);
   const notifRef = useRef(null);
   const [menuOpen, setMenuOpen]   = useState(false);
@@ -250,12 +255,36 @@ export default function Navbar({
   const handleHelp   = (e) => { e.preventDefault(); closeMenu(); if (onHelpClick)  onHelpClick();  };
   const handleLogin  = ()  => { closeMenu(); if (onLoginClick)    onLoginClick();    };
   const handleReg    = ()  => { closeMenu(); if (onRegisterClick) onRegisterClick(); };
-  const handleLogout = ()  => {
-    const confirmed = window.confirm(t("nav.logoutConfirm"));
-    if (!confirmed) return;
-    closeMenu(); logout();
-    if (onHomeClick) onHomeClick();
-  };
+
+
+
+
+
+
+    
+
+const handleLogout = () => {
+  setShowLogoutModal(true); // open modal instead of alert
+};
+
+const confirmLogout = () => {
+  setShowLogoutModal(false);
+  closeMenu();
+  logout();
+  if (onHomeClick) onHomeClick();
+};
+
+const cancelLogout = () => {
+  setShowLogoutModal(false);
+};
+
+  
+
+
+
+
+
+
 
   const handleScroll = (id) => (e) => {
     e.preventDefault(); closeMenu();
@@ -331,6 +360,9 @@ export default function Navbar({
           <a href="#plans"    onClick={handleScroll("plans")}   className={currentPage === "plans"  ? "active" : ""}>⭐&nbsp; {t("nav.membershipPlans")}</a>
           <a href="#help"     onClick={handleHelp}             className={currentPage === "help"   ? "active" : ""}>❓&nbsp; {t("nav.help")}</a>
         </div>
+
+
+        
         {isLoggedIn ? (
           <button className="mobile-logout" onClick={handleLogout}>
             <IcoLogout /> {t("nav.logout")}
@@ -344,6 +376,25 @@ export default function Navbar({
       </div>
 
       {menuOpen && <div className="mobile-backdrop" onClick={closeMenu} />}
+
+
+
+
+      {showLogoutModal && (
+  <div className="logout-modal-overlay">
+    <div className="logout-modal">
+      <h3>{t("nav.logoutConfirm")}</h3>
+      <div className="logout-modal-actions">
+        <button className="btn-cancel" onClick={cancelLogout}>
+          Cancel
+        </button>
+        <button className="btn-confirm" onClick={confirmLogout}>
+          Logout
+        </button>
+      </div>
+    </div>
+  </div>
+)}
     </>
   );
 }
